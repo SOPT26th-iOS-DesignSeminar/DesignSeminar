@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SOPT_CoupangEats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mm4-JY-QeI">
+                                <rect key="frame" x="82" y="198" width="250" height="500"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdP-v1-G2j">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+                                        <state key="normal" title="SE 뷰보기"/>
+                                        <connections>
+                                            <action selector="moveVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pkp-jh-TTk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhn-gO-aB7">
+                                        <rect key="frame" x="0.0" y="100" width="250" height="100"/>
+                                        <state key="normal" title="MH 뷰보기"/>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zow-yy-r7V">
+                                        <rect key="frame" x="0.0" y="200" width="250" height="100"/>
+                                        <state key="normal" title="YJ 뷰보기"/>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWd-04-0HO">
+                                        <rect key="frame" x="0.0" y="300" width="250" height="100"/>
+                                        <state key="normal" title="MK 뷰보기"/>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x90-pp-u5E">
+                                        <rect key="frame" x="0.0" y="400" width="250" height="100"/>
+                                        <state key="normal" title="NS 뷰보기"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="DdP-v1-G2j" secondAttribute="trailing" id="EQE-jQ-t3W"/>
+                                    <constraint firstAttribute="width" constant="250" id="OkJ-Zm-KKd"/>
+                                    <constraint firstItem="x90-pp-u5E" firstAttribute="trailing" secondItem="NWd-04-0HO" secondAttribute="trailing" id="UgZ-aS-z5y"/>
+                                    <constraint firstItem="Zow-yy-r7V" firstAttribute="trailing" secondItem="zhn-gO-aB7" secondAttribute="trailing" id="Xyc-4B-LTp"/>
+                                    <constraint firstItem="zhn-gO-aB7" firstAttribute="trailing" secondItem="DdP-v1-G2j" secondAttribute="trailing" id="bCj-sJ-0q8"/>
+                                    <constraint firstItem="Zow-yy-r7V" firstAttribute="leading" secondItem="zhn-gO-aB7" secondAttribute="leading" id="cBQ-U6-xHc"/>
+                                    <constraint firstItem="zhn-gO-aB7" firstAttribute="leading" secondItem="DdP-v1-G2j" secondAttribute="leading" id="dvE-3C-pvB"/>
+                                    <constraint firstItem="NWd-04-0HO" firstAttribute="leading" secondItem="Zow-yy-r7V" secondAttribute="leading" id="e7Y-Ge-T8c"/>
+                                    <constraint firstAttribute="height" constant="500" id="k1M-vE-UvE"/>
+                                    <constraint firstItem="NWd-04-0HO" firstAttribute="trailing" secondItem="Zow-yy-r7V" secondAttribute="trailing" id="kuG-73-G75"/>
+                                    <constraint firstItem="x90-pp-u5E" firstAttribute="leading" secondItem="NWd-04-0HO" secondAttribute="leading" id="uSt-Ft-IVZ"/>
+                                    <constraint firstItem="DdP-v1-G2j" firstAttribute="leading" secondItem="mm4-JY-QeI" secondAttribute="leading" id="xYN-v6-ZBM"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mm4-JY-QeI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5VD-fa-d0X"/>
+                            <constraint firstItem="mm4-JY-QeI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="S0F-eg-GuH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="121"/>
+        </scene>
+    </scenes>
+</document>
