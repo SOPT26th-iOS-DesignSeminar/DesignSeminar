@@ -21,9 +21,9 @@ class ViewController: UIViewController {
         let storyboardName: String
         switch sender.tag {
         case 1:
-            storyboardName = "SE"
-        case 2:
             storyboardName = "MH"
+        case 2:
+            storyboardName = "SE"
         case 3:
             storyboardName = "YJ"
         case 4:
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         
         let sb = UIStoryboard(name: storyboardName, bundle: nil)
         let nextVC = sb.instantiateViewController(withIdentifier: "\(storyboardName)Main")
-        
+        print(nextVC)
         nextVC.modalPresentationStyle = .fullScreen
         present(nextVC, animated: true)
     }

@@ -1,26 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iai-rL-usi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="owi-gB-Lwv">
+        <!--Category Detail View Controller-->
+        <scene sceneID="pt2-Gv-wTc">
             <objects>
-                <viewController storyboardIdentifier="MHMain" id="dap-lE-jmD" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="e7V-z8-l4e">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="zmm-qZ-FYd" customClass="CategoryDetailViewController" customModule="SOPT_CoupangEats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Xi-Rq-TNx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWo-5M-acu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y2Q-E7-mON">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4Wz-mH-IkM">
+                                                <rect key="frame" x="11" y="0.0" width="392" height="200"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="Pgt-Bx-44C"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lhi-H4-SVT">
+                                                    <size key="itemSize" width="68" height="118"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FoodSelectCell" reuseIdentifier="FoodSelectCell" id="7SC-Iu-fup" customClass="FoodSelectCell" customModule="SOPT_CoupangEats" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="68" height="118"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sdE-MZ-E2a">
+                                                            <rect key="frame" x="0.0" y="0.0" width="68" height="118"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UiY-0a-tR5">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="68" height="68"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="UiY-0a-tR5" secondAttribute="height" multiplier="1:1" id="cA3-z0-eiu"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXi-UE-7tU">
+                                                                    <rect key="frame" x="11" y="75" width="46" height="30"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="bXi-UE-7tU" firstAttribute="centerX" secondItem="sdE-MZ-E2a" secondAttribute="centerX" id="0tf-3c-wQw"/>
+                                                                <constraint firstItem="UiY-0a-tR5" firstAttribute="leading" secondItem="sdE-MZ-E2a" secondAttribute="leading" id="7B4-E0-ZmH"/>
+                                                                <constraint firstItem="UiY-0a-tR5" firstAttribute="top" secondItem="sdE-MZ-E2a" secondAttribute="top" id="bmS-ma-0wL"/>
+                                                                <constraint firstItem="bXi-UE-7tU" firstAttribute="top" secondItem="UiY-0a-tR5" secondAttribute="bottom" constant="7" id="gt6-9q-VNE"/>
+                                                                <constraint firstAttribute="trailing" secondItem="UiY-0a-tR5" secondAttribute="trailing" id="mkG-v3-fiD"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <size key="customSize" width="68" height="118"/>
+                                                        <connections>
+                                                            <outlet property="foodImage" destination="UiY-0a-tR5" id="JYf-5n-bwE"/>
+                                                            <outlet property="titleButton" destination="bXi-UE-7tU" id="vEC-sb-E0Q"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="4Wz-mH-IkM" firstAttribute="top" secondItem="y2Q-E7-mON" secondAttribute="top" id="LaV-sX-O88"/>
+                                            <constraint firstItem="4Wz-mH-IkM" firstAttribute="leading" secondItem="y2Q-E7-mON" secondAttribute="leading" priority="250" constant="11" id="Pm4-9i-yo6"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Wz-mH-IkM" secondAttribute="trailing" priority="250" constant="11" id="TWT-4m-gWL"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="y2Q-E7-mON" secondAttribute="bottom" id="LnW-UH-rZD"/>
+                                    <constraint firstItem="y2Q-E7-mON" firstAttribute="leading" secondItem="hWo-5M-acu" secondAttribute="leading" id="lHW-Rl-8Je"/>
+                                    <constraint firstAttribute="trailing" secondItem="y2Q-E7-mON" secondAttribute="trailing" id="mcW-BO-cPN"/>
+                                    <constraint firstItem="y2Q-E7-mON" firstAttribute="top" secondItem="hWo-5M-acu" secondAttribute="top" id="xAX-KM-7Ew"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="ldR-LV-hNg"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hWo-5M-acu" secondAttribute="bottom" id="7UT-IG-vdt"/>
+                            <constraint firstItem="hWo-5M-acu" firstAttribute="trailing" secondItem="eqq-Kc-cJD" secondAttribute="trailing" id="Bhg-G8-7jZ"/>
+                            <constraint firstItem="y2Q-E7-mON" firstAttribute="width" secondItem="5Xi-Rq-TNx" secondAttribute="width" priority="250" id="ObC-6G-hn3"/>
+                            <constraint firstItem="hWo-5M-acu" firstAttribute="top" secondItem="5Xi-Rq-TNx" secondAttribute="top" id="SoV-EZ-CoG"/>
+                            <constraint firstItem="y2Q-E7-mON" firstAttribute="height" secondItem="5Xi-Rq-TNx" secondAttribute="height" priority="250" id="aeA-im-QTv"/>
+                            <constraint firstItem="hWo-5M-acu" firstAttribute="leading" secondItem="eqq-Kc-cJD" secondAttribute="leading" id="iJU-Wq-xez"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eqq-Kc-cJD"/>
                     </view>
+                    <navigationItem key="navigationItem" id="NpG-bI-giL">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="0fE-SL-ue0"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="Y96-LE-4mV"/>
+                    </navigationItem>
+                    <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="FoodSelectCollectionView" destination="4Wz-mH-IkM" id="1Sg-os-F8V"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L3n-HG-pLD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ygw-tY-zoa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="64" y="115"/>
+            <point key="canvasLocation" x="2582.608695652174" y="72.991071428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MQh-Lw-D0C">
+            <objects>
+                <navigationController storyboardIdentifier="MHMain" automaticallyAdjustsScrollViewInsets="NO" id="iai-rL-usi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4gC-EA-IfW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zmm-qZ-FYd" kind="relationship" relationship="rootViewController" id="WqY-LP-rhi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2K-iT-LtO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672.4637681159422" y="72.991071428571431"/>
         </scene>
     </scenes>
 </document>
