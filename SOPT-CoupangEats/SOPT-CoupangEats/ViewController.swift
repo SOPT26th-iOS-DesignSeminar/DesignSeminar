@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         let storyboardName: String
         switch sender.tag {
         case 1:
-            storyboardName = "YJ"
+            storyboardName = "SE"
         case 2:
             storyboardName = "MH"
         case 3:
