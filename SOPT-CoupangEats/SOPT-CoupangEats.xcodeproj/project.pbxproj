@@ -17,6 +17,7 @@
 		0660D67324796BD10081A8C0 /* MK.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0660D67224796BD10081A8C0 /* MK.storyboard */; };
 		0660D67524796BD70081A8C0 /* NS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0660D67424796BD70081A8C0 /* NS.storyboard */; };
 		0660D67824796C4F0081A8C0 /* SE.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0660D67724796C4F0081A8C0 /* SE.storyboard */; };
+		ECB08DF1247D58D700903E18 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB08DF0247D58D700903E18 /* FilterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0660D67224796BD10081A8C0 /* MK.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MK.storyboard; sourceTree = "<group>"; };
 		0660D67424796BD70081A8C0 /* NS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NS.storyboard; sourceTree = "<group>"; };
 		0660D67724796C4F0081A8C0 /* SE.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SE.storyboard; sourceTree = "<group>"; };
+		ECB08DF0247D58D700903E18 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				0660D67024796BCC0081A8C0 /* YJ.storyboard */,
+				ECB08DF0247D58D700903E18 /* FilterViewController.swift */,
 			);
 			path = YJ;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB08DF1247D58D700903E18 /* FilterViewController.swift in Sources */,
 				0660D64F2479685E0081A8C0 /* ViewController.swift in Sources */,
 				0660D64B2479685E0081A8C0 /* AppDelegate.swift in Sources */,
 			);
