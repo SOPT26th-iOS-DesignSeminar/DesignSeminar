@@ -8,10 +8,10 @@
 
 import UIKit
 struct MenuList {
-    var menuTitleButton: String
+    var menuTitle: String
     
     init(menutitle: String) {
-        self.menuTitleButton = menutitle
+        self.menuTitle = menutitle
     }
     
 }
