@@ -9,7 +9,8 @@
 import UIKit
 
 class StoreTableViewCell: UITableViewCell {
-static let reuseIdentifier = "StoreCell"
+    static let reuseIdentifier = "StoreCell"
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

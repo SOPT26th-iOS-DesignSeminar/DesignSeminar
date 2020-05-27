@@ -18,7 +18,13 @@ class MainCategoryCollectionViewCell: UICollectionViewCell {
     lazy var foodImgString = ["imgPorkFeet", "imgChicken", "imgBunsik"]
     
     override func awakeFromNib() {
+        super.awakeFromNib()
+        foodImgView.applyRadius()
+    }
+    
+    func bindData(food: String) {
         let random = Int.random(in: 0..<foodImgString.count)
+        foodNameLabel.text = food
         foodImgView.image = UIImage(named: foodImgString[random])
     }
 }

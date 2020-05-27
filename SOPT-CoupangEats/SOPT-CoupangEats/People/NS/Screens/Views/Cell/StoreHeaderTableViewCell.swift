@@ -10,6 +10,7 @@ import UIKit
 
 class StoreHeaderTableViewCell: UITableViewCell {
     static let reuseIdentifier = "StoreHeaderCell"
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +22,7 @@ class StoreHeaderTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func deliveryClick(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+    }
 }

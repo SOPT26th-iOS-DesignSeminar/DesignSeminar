@@ -22,6 +22,7 @@
 		0660D67324796BD10081A8C0 /* MK.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0660D67224796BD10081A8C0 /* MK.storyboard */; };
 		0660D67524796BD70081A8C0 /* NS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0660D67424796BD70081A8C0 /* NS.storyboard */; };
 		0660D67824796C4F0081A8C0 /* SE.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0660D67724796C4F0081A8C0 /* SE.storyboard */; };
+		0684FC4D247ED35D00532B77 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0684FC4C247ED35D00532B77 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		0660D67224796BD10081A8C0 /* MK.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MK.storyboard; sourceTree = "<group>"; };
 		0660D67424796BD70081A8C0 /* NS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NS.storyboard; sourceTree = "<group>"; };
 		0660D67724796C4F0081A8C0 /* SE.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SE.storyboard; sourceTree = "<group>"; };
+		0684FC4C247ED35D00532B77 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		0660D660247969620081A8C0 /* NS */ = {
 			isa = PBXGroup;
 			children = (
+				0684FC4B247ED34F00532B77 /* GlobalExtension */,
 				062D4BEF247EA1DA0069DE6C /* Screens */,
 				0660D67424796BD70081A8C0 /* NS.storyboard */,
 			);
@@ -172,6 +175,14 @@
 				0660D67724796C4F0081A8C0 /* SE.storyboard */,
 			);
 			path = SE;
+			sourceTree = "<group>";
+		};
+		0684FC4B247ED34F00532B77 /* GlobalExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0684FC4C247ED35D00532B77 /* UIView+Extension.swift */,
+			);
+			path = GlobalExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +263,7 @@
 			files = (
 				062D4BF2247EA1F70069DE6C /* MainViewController.swift in Sources */,
 				062D4BF9247EAA4A0069DE6C /* MainCategoryCollectionViewCell.swift in Sources */,
+				0684FC4D247ED35D00532B77 /* UIView+Extension.swift in Sources */,
 				0660D64F2479685E0081A8C0 /* ViewController.swift in Sources */,
 				0660D64B2479685E0081A8C0 /* AppDelegate.swift in Sources */,
 				062D4BF7247EAA3D0069DE6C /* BannerCollectionViewCell.swift in Sources */,

@@ -30,8 +30,6 @@ class MainViewController: UIViewController {
     }
     
     func setupCollectionView() {
-        bannerCollectionView.register(BannerCollectionViewCell.self, forCellWithReuseIdentifier: BannerCollectionViewCell.reuseIdentifier)
-        categoryCollectionView.register(MainCategoryCollectionViewCell.self, forCellWithReuseIdentifier: MainCategoryCollectionViewCell.reuseIdentifier)
         bannerCollectionView.dataSource = self
         bannerCollectionView.delegate = self
         categoryCollectionView.dataSource = self
@@ -85,26 +83,40 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
         }
         return 0
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         if collectionView == categoryCollectionView {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainCategoryCollectionViewCell.reuseIdentifier, for: indexPath) as? MainCategoryCollectionViewCell else {
                  return UICollectionViewCell()
             }
+            cell.bindData(food: categoryMockData[indexPath.item])
             
             return cell
         } else if collectionView == bannerCollectionView {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BannerCollectionViewCell.reuseIdentifier, for: indexPath) as? BannerCollectionViewCell else {
                 return UICollectionViewCell()
             }
+            
             return cell
         }
-        
+
         return UICollectionViewCell()
     }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if collectionView == categoryCollectionView {
+            return CGSize(width: 57, height: 109)
+        } else if collectionView == bannerCollectionView {
+            return collectionView.frame.size
+        }
+        return .zero
+    }
     
-    
-    
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        if collectionView == categoryCollectionView {
+            return 20
+        }
+        return 0
+    }
+
 }

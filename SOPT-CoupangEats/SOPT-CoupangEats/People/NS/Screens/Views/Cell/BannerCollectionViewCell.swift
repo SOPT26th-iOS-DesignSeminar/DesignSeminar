@@ -9,9 +9,10 @@
 import UIKit
 
 class BannerCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var bannerImgView: UIImageView!
     static let reuseIdentifier = "BannerCell"
     
     override func awakeFromNib() {
-        
+        super.awakeFromNib()
     }
 }
