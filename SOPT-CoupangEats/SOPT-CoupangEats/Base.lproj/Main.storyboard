@@ -40,6 +40,9 @@
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x90-pp-u5E">
                                         <rect key="frame" x="0.0" y="400" width="250" height="100"/>
                                         <state key="normal" title="NS 뷰보기"/>
+                                        <connections>
+                                            <action selector="moveVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BKd-dc-Jel"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

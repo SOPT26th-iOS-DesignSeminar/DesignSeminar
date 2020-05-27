@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		062D4BF2247EA1F70069DE6C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062D4BF1247EA1F70069DE6C /* MainViewController.swift */; };
+		062D4BF5247EAA2B0069DE6C /* StoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062D4BF4247EAA2B0069DE6C /* StoreTableViewCell.swift */; };
+		062D4BF7247EAA3D0069DE6C /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062D4BF6247EAA3D0069DE6C /* BannerCollectionViewCell.swift */; };
+		062D4BF9247EAA4A0069DE6C /* MainCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062D4BF8247EAA4A0069DE6C /* MainCategoryCollectionViewCell.swift */; };
+		062D4BFB247EAA620069DE6C /* StoreHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062D4BFA247EAA620069DE6C /* StoreHeaderTableViewCell.swift */; };
 		0660D64B2479685E0081A8C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660D64A2479685E0081A8C0 /* AppDelegate.swift */; };
 		0660D64F2479685E0081A8C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660D64E2479685E0081A8C0 /* ViewController.swift */; };
 		0660D6522479685E0081A8C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0660D6502479685E0081A8C0 /* Main.storyboard */; };
@@ -22,6 +26,10 @@
 
 /* Begin PBXFileReference section */
 		062D4BF1247EA1F70069DE6C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		062D4BF4247EAA2B0069DE6C /* StoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableViewCell.swift; sourceTree = "<group>"; };
+		062D4BF6247EAA3D0069DE6C /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		062D4BF8247EAA4A0069DE6C /* MainCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		062D4BFA247EAA620069DE6C /* StoreHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		0660D6472479685E0081A8C0 /* SOPT-CoupangEats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOPT-CoupangEats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0660D64A2479685E0081A8C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0660D64E2479685E0081A8C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,9 +66,21 @@
 		062D4BF0247EA1E70069DE6C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				062D4BF3247EAA0A0069DE6C /* Cell */,
 				062D4BF1247EA1F70069DE6C /* MainViewController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		062D4BF3247EAA0A0069DE6C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				062D4BF4247EAA2B0069DE6C /* StoreTableViewCell.swift */,
+				062D4BF6247EAA3D0069DE6C /* BannerCollectionViewCell.swift */,
+				062D4BF8247EAA4A0069DE6C /* MainCategoryCollectionViewCell.swift */,
+				062D4BFA247EAA620069DE6C /* StoreHeaderTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		0660D63E2479685E0081A8C0 = {
@@ -231,8 +251,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				062D4BF2247EA1F70069DE6C /* MainViewController.swift in Sources */,
+				062D4BF9247EAA4A0069DE6C /* MainCategoryCollectionViewCell.swift in Sources */,
 				0660D64F2479685E0081A8C0 /* ViewController.swift in Sources */,
 				0660D64B2479685E0081A8C0 /* AppDelegate.swift in Sources */,
+				062D4BF7247EAA3D0069DE6C /* BannerCollectionViewCell.swift in Sources */,
+				062D4BFB247EAA620069DE6C /* StoreHeaderTableViewCell.swift in Sources */,
+				062D4BF5247EAA2B0069DE6C /* StoreTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
