@@ -17,13 +17,12 @@ class FoodSelectCell: UICollectionViewCell {
     @IBOutlet weak var clickImage: UIImageView!
     //@IBOutlet weak var clickImage: UIImageView!
     @IBAction func onClick(_ sender: UIButton) {
-        //print("클릭!",titleButton.titleLabel)
+        print("클릭!",titleButton.titleLabel)
         clickImage.image = UIImage(named: "icnSelectBar")
         
     }
 
     func set(_ foodInformation: FoodList) {
-
         foodImage.image = foodInformation.foodImg
         titleButton.setTitle(foodInformation.foodTitle, for: .normal)
         foodImage.layer.cornerRadius = foodImage.frame.height / 2

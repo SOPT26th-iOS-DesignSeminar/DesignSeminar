@@ -11,13 +11,14 @@ import UIKit
 class CategoryDetailViewController: UIViewController{
 
     @IBOutlet weak var FoodSelectCollectionView: UICollectionView!
+    @IBOutlet weak var MenuCollectionView: UICollectionView!
     
     private var foodList: [FoodList] = []
+    private var menuList: [MenuList] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
+    self.navigationController?.navigationBar.isTranslucent = true
         // navigation bar 투명으로
         setFoodList()
         FoodSelectCollectionView.delegate = self
@@ -35,17 +36,27 @@ class CategoryDetailViewController: UIViewController{
         let food5 = FoodList(foodName: "imgGrilledFood", title: "구이")
         foodList = [food1,food2,food3,food4,food5]
     }
+    private func setMenuList() {
+        let menu1 = MenuList(menutitle: "찜닭")
+        let menu2 = MenuList(menutitle: "갈비탕")
+        let menu3 = MenuList(menutitle: "아구찜")
+        let menu4 = MenuList(menutitle: "삼계탕")
+        let menu5 = MenuList(menutitle: "설렁탕")
+        let menu6 = MenuList(menutitle: "순대국")
+        menuList = [menu1,menu2,menu3,menu4,menu5,menu6]
+        
+    }
     
 }
 extension CategoryDetailViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt
     indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width / 6 , height: (collectionView.frame.width / 6)+50)
+        return CGSize(width: collectionView.frame.width / 6 , height: (collectionView.frame.width / 6)+50+11)
         //Cell width, height 지정
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-    return UIEdgeInsets(top: 0, left: 11, bottom: 0, right: 11)
+    return UIEdgeInsets(top: 11, left: 11, bottom: 0, right: 11)
         //CollectionView ContentInset 지정
     }
     
