@@ -11,12 +11,14 @@ import UIKit
 class CategoryDetailViewController: UIViewController{
 
     @IBOutlet weak var FoodSelectCollectionView: UICollectionView!
+    
     private var foodList: [FoodList] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.navigationController?.navigationBar.shadowImage = UIImage()
-        //self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        // navigation bar 투명으로
         setFoodList()
         FoodSelectCollectionView.delegate = self
         FoodSelectCollectionView.dataSource = self
@@ -26,8 +28,6 @@ class CategoryDetailViewController: UIViewController{
         // Do any additional setup after loading the view.
     }
     private func setFoodList() {
-        //let food1 = FoodList(title: "분식", bluelight: "icnSelectBar", foodName: "imgBunsik")
-        //let food2 = FoodList(title: "치킨", bluelight: "icnSelectBar", foodName: "imgChicken")
         let food1 = FoodList(foodName: "imgBunsik", title: "분식")
         let food2 = FoodList(foodName: "imgChicken", title: "치킨")
         let food3 = FoodList(foodName: "imgPorkFeet", title: "족발/보쌈")
@@ -41,7 +41,7 @@ extension CategoryDetailViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt
     indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width / 6 , height: (collectionView.frame.width / 6)+60)
+        return CGSize(width: collectionView.frame.width / 6 , height: (collectionView.frame.width / 6)+50)
         //Cell width, height 지정
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -55,9 +55,9 @@ extension CategoryDetailViewController: UICollectionViewDelegateFlowLayout {
     }
     
 }
-    
 
 extension CategoryDetailViewController: UICollectionViewDataSource {
+
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return foodList.count
