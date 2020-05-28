@@ -31,6 +31,8 @@ class CategoryDetailViewController: UIViewController{
     }
     private var foodList: [FoodList] = []
     private var menuList: [MenuList] = []
+    private var storeList: [StoreInformation] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,10 +44,13 @@ class CategoryDetailViewController: UIViewController{
         // navigation bar 투명으로
         setFoodList()
         setMenuList()
+        setStoreList()
         FoodSelectCollectionView.delegate = self
         FoodSelectCollectionView.dataSource = self
         MenuCollectionView.delegate = self
         MenuCollectionView.dataSource = self
+        StoreTableView.delegate = self
+        StoreTableView.dataSource = self
         let layout = FoodSelectCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.scrollDirection = .horizontal // 가로스크롤
         let layout2 = MenuCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
@@ -69,6 +74,20 @@ class CategoryDetailViewController: UIViewController{
         let menu5 = MenuList(menutitle: "설렁탕")
         let menu6 = MenuList(menutitle: "순대국")
         menuList = [menu1,menu2,menu3,menu4,menu5,menu6]
+    }
+    private func setStoreList() {
+        let store1 = StoreInformation(storeImg: .sundae, name: "백암왕순대 소머리국밥", time: "20분~30분", explain: "백암왕순대 소머리국밥은.용인백암왕순대의 전통을 이어가기 위해 ‘직접 삶아 우러내는’ 슬로건으로 초심을 첫 마음처럼 지켜가겠습니다.", point: "4.5 (307)", meter: "• 2.7 km")
+        let store2 = StoreInformation(storeImg: .smile, name: "스마일한식", time: "20분~30분", explain: "신선한 재료로 남녀노소 가격부담없이 즐길 수 있도록 최고의 서비스를 제공하겠습니다!", point: "4.5 (307)", meter: "• 2.7 km")
+        let store3 = StoreInformation(storeImg: .sundae
+            , name: "백암왕순대 소머리국밥", time: "20분~30분", explain: "백암왕순대 소머리국밥은.용인백암왕순대의 전통을 이어가기 위해 ‘직접 삶아 우러내는’ 슬로건으로 초심을 첫 마음처럼 지켜가겠습니다.", point: "4.5 (307)", meter: "• 2.7 km")
+        let store4 = StoreInformation(storeImg: .smile, name: "스마일한식", time: "20분~30분", explain: "신선한 재료로 남녀노소 가격부담없이 즐길 수 있도록 최고의 서비스를 제공하겠습니다!", point: "4.5 (307)", meter: "• 2.7 km")
+        storeList = [store1,store2,store3,store4]
+        /*var storeImg: StoreImage
+        var name: String
+        var time: String
+        var explain: String
+        var point: String
+        var meter: String*/
     }
     
 }
@@ -141,6 +160,25 @@ extension CategoryDetailViewController: UICollectionViewDataSource {
         
     }
 }
-
+extension CategoryDetailViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 263
+    }
+    
+}
+extension CategoryDetailViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return storeList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let storeCell = tableView.dequeueReusableCell(withIdentifier: StoreListCell.identifier, for:
+        indexPath) as? StoreListCell else { return UITableViewCell() }
+        storeCell.storeInformation(storeImg: storeList[indexPath.row].storeImg.getImageName(), name: storeList[indexPath.row].name, time: storeList[indexPath.row].time, explain: storeList[indexPath.row].explain, point: storeList[indexPath.row].point, meter: storeList[indexPath.row].meter)
+        return storeCell
+    }
+    
+    
+}
 
 
