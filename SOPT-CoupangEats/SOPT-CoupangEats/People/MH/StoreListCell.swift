@@ -14,7 +14,7 @@ class StoreListCell: UITableViewCell {
     @IBOutlet weak var StoreImageView: UIImageView!
     @IBOutlet weak var StoreNameLabel: UILabel!
     @IBOutlet weak var DeliveryTimeLabel: UILabel!
-    @IBOutlet weak var StoreExplainLabel: UILabel!
+    @IBOutlet weak var StoreExplainTextView: UITextView!
     @IBOutlet weak var StarPointLabel: UILabel!
     @IBOutlet weak var MeterLabel: UILabel!
     
@@ -33,7 +33,7 @@ class StoreListCell: UITableViewCell {
         StoreImageView.image = UIImage(named: storeImg)
         StoreNameLabel.text = name
         DeliveryTimeLabel.text = time
-        StoreExplainLabel.text = explain
+        StoreExplainTextView.text = explain
         StarPointLabel.text = point
         MeterLabel.text = meter
     }

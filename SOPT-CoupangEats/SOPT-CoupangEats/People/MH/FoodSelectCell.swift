@@ -2,7 +2,7 @@
 //  FoodSelectCell.swift
 //  SOPT-CoupangEats
 //
-//  Created by 김민희 on 26/05/2020.
+//  Created by 김민희 on 29/05/2020.
 //  Copyright © 2020 남수김. All rights reserved.
 //
 
@@ -13,9 +13,8 @@ class FoodSelectCell: UICollectionViewCell {
     
     @IBOutlet weak var foodImage: UIImageView!
     @IBOutlet weak var titleButton: UIButton!
-    
     @IBOutlet weak var clickImage: UIImageView!
-    //@IBOutlet weak var clickImage: UIImageView!
+    
     @IBAction func onClick(_ sender: UIButton) {
         clickImage.image = UIImage(named: "icnSelectBar")
         foodImage.layer.borderWidth = 1
@@ -24,15 +23,15 @@ class FoodSelectCell: UICollectionViewCell {
         titleButton.setTitleColor(UIColor(red: 1/255, green: 175/255, blue: 255/255, alpha: 1), for:.normal)
         
     }
-
     func set(_ foodInformation: FoodList) {
         foodImage.image = foodInformation.foodImg
         titleButton.setTitle(foodInformation.foodTitle, for: .normal)
-        foodImage.layer.cornerRadius = foodImage.frame.height / 2
-        foodImage.clipsToBounds = true // 이미지 둥글게
+        titleButton.contentEdgeInsets = UIEdgeInsets(top: (7+11+foodImage.frame.height), left: (foodImage.frame.height/2), bottom: 0, right: (foodImage.frame.height/2))
+        foodImage.layer.cornerRadius = foodImage.frame.width / 2
+        //foodImage.clipsToBounds = true
         titleButton.titleLabel?.font = UIFont.systemFont(ofSize: CGFloat(12))
         titleButton.setTitleColor(.black, for: .normal) //버튼 색 black으로
-        titleButton.contentEdgeInsets = UIEdgeInsets(top:(7+11+foodImage.frame.height),left: 0,bottom: 0,right: 0)
         
     }
+    
 }
