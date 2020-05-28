@@ -20,10 +20,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y2Q-E7-mON">
-                                        <rect key="frame" x="0.0" y="0.0" width="834" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="417" height="1000"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4Wz-mH-IkM">
-                                                <rect key="frame" x="11" y="0.0" width="812" height="100"/>
+                                                <rect key="frame" x="11" y="0.0" width="395" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="750" constant="100" id="1aG-XI-Srv"/>
@@ -78,13 +78,13 @@
                                                 </cells>
                                             </collectionView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="wpl-kQ-Ul9">
-                                                <rect key="frame" x="0.0" y="100" width="834" height="3"/>
+                                                <rect key="frame" x="0.0" y="100" width="417.00000000000011" height="1.5"/>
                                             </imageView>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xrn-fs-mMW">
-                                                <rect key="frame" x="15" y="100" width="804" height="100"/>
+                                                <rect key="frame" x="15" y="101" width="387" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="Bmc-PQ-ESz"/>
+                                                    <constraint firstAttribute="height" constant="50" id="Bmc-PQ-ESz"/>
                                                 </constraints>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ENl-3e-la1">
                                                     <size key="itemSize" width="77" height="39"/>
@@ -102,6 +102,7 @@
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTJ-nU-Ab1">
                                                                     <rect key="frame" x="0.0" y="0.0" width="77" height="39"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <state key="normal" title="Button"/>
                                                                 </button>
                                                             </subviews>
@@ -123,13 +124,13 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="xrn-fs-mMW" firstAttribute="leading" secondItem="y2Q-E7-mON" secondAttribute="leading" constant="15" id="1VM-Rv-QrR"/>
-                                            <constraint firstItem="xrn-fs-mMW" firstAttribute="top" secondItem="4Wz-mH-IkM" secondAttribute="bottom" id="Ce1-XX-5xc"/>
                                             <constraint firstAttribute="trailing" secondItem="xrn-fs-mMW" secondAttribute="trailing" constant="15" id="H1R-Y4-Nc8"/>
                                             <constraint firstItem="wpl-kQ-Ul9" firstAttribute="top" secondItem="4Wz-mH-IkM" secondAttribute="bottom" id="LKe-LT-nPo"/>
                                             <constraint firstItem="4Wz-mH-IkM" firstAttribute="top" secondItem="y2Q-E7-mON" secondAttribute="top" id="LaV-sX-O88"/>
                                             <constraint firstItem="4Wz-mH-IkM" firstAttribute="leading" secondItem="y2Q-E7-mON" secondAttribute="leading" priority="250" constant="11" id="Pm4-9i-yo6"/>
                                             <constraint firstAttribute="trailing" secondItem="4Wz-mH-IkM" secondAttribute="trailing" priority="250" constant="11" id="TWT-4m-gWL"/>
                                             <constraint firstItem="wpl-kQ-Ul9" firstAttribute="leading" secondItem="y2Q-E7-mON" secondAttribute="leading" id="VWA-qZ-Pbc"/>
+                                            <constraint firstItem="xrn-fs-mMW" firstAttribute="top" secondItem="4Wz-mH-IkM" secondAttribute="bottom" constant="1" id="Wie-VU-Eev"/>
                                             <constraint firstAttribute="trailing" secondItem="wpl-kQ-Ul9" secondAttribute="trailing" id="nSy-xP-ZSU"/>
                                         </constraints>
                                     </view>
@@ -160,7 +161,7 @@
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="FoodSelectCollectionView" destination="4Wz-mH-IkM" id="1Sg-os-F8V"/>
-                        <outlet property="MenuCollectionView" destination="xrn-fs-mMW" id="Xqk-gI-kws"/>
+                        <outlet property="MenuCollectionView" destination="xrn-fs-mMW" id="OUY-Fb-mDu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ygw-tY-zoa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

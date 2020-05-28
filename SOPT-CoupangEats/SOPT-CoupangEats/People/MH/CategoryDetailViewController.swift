@@ -18,7 +18,11 @@ class CategoryDetailViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    self.navigationController?.navigationBar.isTranslucent = true
+        
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.tintColor = .black
+
         // navigation bar 투명으로
         setFoodList()
         setMenuList()
@@ -28,8 +32,8 @@ class CategoryDetailViewController: UIViewController{
         MenuCollectionView.dataSource = self
         let layout = FoodSelectCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.scrollDirection = .horizontal // 가로스크롤
-        //let layout2 = MenuCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        //layout2.scrollDirection = .horizontal // 가로스크롤
+        let layout2 = MenuCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout2.scrollDirection = .horizontal // 가로스크롤
 
     }
     private func setFoodList() {
@@ -60,7 +64,7 @@ extension CategoryDetailViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: collectionView.frame.width / 6 , height: (collectionView.frame.width / 6)+50+11)
         }
         if collectionView == MenuCollectionView {
-            return CGSize(width: 50 , height: 20)
+            return CGSize(width: 50 , height: 26)
         }
         return CGSize(width: collectionView.frame.width / 6 , height: (collectionView.frame.width / 6)+50+11)
     }//Cell width, height 지정
@@ -105,21 +109,20 @@ extension CategoryDetailViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let foodCell = collectionView.dequeueReusableCell(withReuseIdentifier: FoodSelectCell.identifier, for: indexPath) as? FoodSelectCell
-        else { return UICollectionViewCell() }
         
         if collectionView == FoodSelectCollectionView {
+            guard let foodCell = collectionView.dequeueReusableCell(withReuseIdentifier: FoodSelectCell.identifier, for: indexPath) as? FoodSelectCell
+            else { return UICollectionViewCell() }
         foodCell.set(foodList[indexPath.row])
             return foodCell
             
-        }
-        if collectionView == MenuCollectionView {
+        } else {
             guard let menuCell = collectionView.dequeueReusableCell(withReuseIdentifier: MenuSelectCell.identifier, for: indexPath) as? MenuSelectCell
             else { return UICollectionViewCell() }
             menuCell.set(menuList[indexPath.row])
             return menuCell
         }
-        return foodCell
+        
     }
 }
 

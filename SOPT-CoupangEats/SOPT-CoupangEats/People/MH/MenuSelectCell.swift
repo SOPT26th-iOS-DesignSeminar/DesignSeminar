@@ -15,7 +15,10 @@ class MenuSelectCell: UICollectionViewCell {
     
     func set(_ menuName: MenuList) {
         menuTitleButton.setTitle(menuName.menuTitle, for: .normal)
-        //print("얌얌얌",menuName.menuTitle)
+        menuTitleButton.tintColor = UIColor(red: 101/255, green: 105/255, blue: 110/255, alpha: 1)
+        menuTitleButton.layer.borderColor = CGColor(srgbRed: 229/255, green: 232/255, blue: 236/255, alpha: 1)
+        menuTitleButton.layer.borderWidth = 1
+        menuTitleButton.layer.cornerRadius = 13
     }
     
 }
