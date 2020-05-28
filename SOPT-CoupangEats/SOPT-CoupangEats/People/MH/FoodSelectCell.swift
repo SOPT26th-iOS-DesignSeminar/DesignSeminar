@@ -17,8 +17,11 @@ class FoodSelectCell: UICollectionViewCell {
     @IBOutlet weak var clickImage: UIImageView!
     //@IBOutlet weak var clickImage: UIImageView!
     @IBAction func onClick(_ sender: UIButton) {
-        print("클릭!",titleButton.titleLabel)
         clickImage.image = UIImage(named: "icnSelectBar")
+        foodImage.layer.borderWidth = 1
+        foodImage.layer.borderColor = CGColor(srgbRed: 13/255, green: 178/255, blue: 254/255, alpha: 1)
+        titleButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 12)
+        titleButton.setTitleColor(UIColor(red: 1/255, green: 175/255, blue: 255/255, alpha: 1), for:.normal)
         
     }
 

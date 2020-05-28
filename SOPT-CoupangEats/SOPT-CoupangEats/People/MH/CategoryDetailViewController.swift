@@ -10,9 +10,25 @@ import UIKit
 
 class CategoryDetailViewController: UIViewController{
 
+    let ChitaOn : UIImage = UIImage(named:"btnSelectedChitadelilvery")!
+    let ChitaOff : UIImage = UIImage(named:"btnUnselectedChitadelivery")!
+    var ClickNum = 0 // Chita 버튼 눌렸는지 안눌렸는지
+    
     @IBOutlet weak var FoodSelectCollectionView: UICollectionView!
     @IBOutlet weak var MenuCollectionView: UICollectionView!
+    @IBOutlet weak var Chitadelilvery: UIButton!
+    @IBOutlet weak var StoreTableView: UITableView!
+    @IBAction func ChitadelilveryClick(_ sender: UIButton) {
+        if ClickNum == 0 { //버튼 안눌려있으면
+            Chitadelilvery.setImage(ChitaOn, for: .normal)
+            ClickNum = 1
+            
+        } else { //버튼이 눌려있으면
+            Chitadelilvery.setImage(ChitaOff, for: .normal)
+            ClickNum = 0
+        }
     
+    }
     private var foodList: [FoodList] = []
     private var menuList: [MenuList] = []
     

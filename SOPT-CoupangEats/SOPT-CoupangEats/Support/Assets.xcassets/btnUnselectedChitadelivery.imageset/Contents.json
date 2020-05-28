@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "btnMenu4.png",
+      "filename" : "btnUnselectedChitadelivery.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "btnMenu4@2x.png",
+      "filename" : "btnUnselectedChitadelivery@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "btnMenu4@3x.png",
+      "filename" : "btnUnselectedChitadelivery@3x.png",
       "scale" : "3x"
     }
   ],

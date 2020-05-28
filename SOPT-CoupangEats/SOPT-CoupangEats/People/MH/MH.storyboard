@@ -20,10 +20,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y2Q-E7-mON">
-                                        <rect key="frame" x="0.0" y="0.0" width="417" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4Wz-mH-IkM">
-                                                <rect key="frame" x="11" y="0.0" width="395" height="100"/>
+                                                <rect key="frame" x="11" y="0.0" width="392" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="750" constant="100" id="1aG-XI-Srv"/>
@@ -78,10 +78,10 @@
                                                 </cells>
                                             </collectionView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="wpl-kQ-Ul9">
-                                                <rect key="frame" x="0.0" y="100" width="417.00000000000011" height="1.5"/>
+                                                <rect key="frame" x="0.0" y="100" width="414.00000000000011" height="1.5"/>
                                             </imageView>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xrn-fs-mMW">
-                                                <rect key="frame" x="15" y="101" width="387" height="50"/>
+                                                <rect key="frame" x="15" y="101" width="384" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Bmc-PQ-ESz"/>
@@ -120,18 +120,57 @@
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="골라먹는 맛집" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0K6-Qu-lRc">
+                                                <rect key="frame" x="21" y="173" width="93" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.24313725490196078" green="0.24313725490196078" blue="0.24313725490196078" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwH-ey-Qh0">
+                                                <rect key="frame" x="356" y="171" width="58" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="BXO-ld-zKw"/>
+                                                    <constraint firstAttribute="width" constant="58" id="fXo-yI-eqN"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="btnUnselectedFilter"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szY-1n-vgA">
+                                                <rect key="frame" x="259" y="171" width="81" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="7Lm-V7-UV7"/>
+                                                    <constraint firstAttribute="width" constant="81" id="g58-xg-uXt"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="btnUnselectedChitadelivery"/>
+                                                <connections>
+                                                    <action selector="ChitadelilveryClick:" destination="zmm-qZ-FYd" eventType="touchUpInside" id="8ND-2W-c9w"/>
+                                                </connections>
+                                            </button>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yso-K6-Hyk">
+                                                <rect key="frame" x="0.0" y="215" width="414" height="785"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </tableView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="xrn-fs-mMW" firstAttribute="leading" secondItem="y2Q-E7-mON" secondAttribute="leading" constant="15" id="1VM-Rv-QrR"/>
+                                            <constraint firstItem="0K6-Qu-lRc" firstAttribute="leading" secondItem="y2Q-E7-mON" secondAttribute="leading" constant="21" id="3cE-Rv-fhZ"/>
+                                            <constraint firstItem="qwH-ey-Qh0" firstAttribute="leading" secondItem="szY-1n-vgA" secondAttribute="trailing" constant="16" id="7AI-mj-aXJ"/>
+                                            <constraint firstItem="Yso-K6-Hyk" firstAttribute="leading" secondItem="y2Q-E7-mON" secondAttribute="leading" id="Dji-C8-Llj"/>
                                             <constraint firstAttribute="trailing" secondItem="xrn-fs-mMW" secondAttribute="trailing" constant="15" id="H1R-Y4-Nc8"/>
+                                            <constraint firstItem="qwH-ey-Qh0" firstAttribute="top" secondItem="xrn-fs-mMW" secondAttribute="bottom" constant="20" id="K0Z-rI-hNj"/>
+                                            <constraint firstItem="szY-1n-vgA" firstAttribute="top" secondItem="xrn-fs-mMW" secondAttribute="bottom" constant="20" id="KZP-TE-D5B"/>
+                                            <constraint firstItem="Yso-K6-Hyk" firstAttribute="top" secondItem="szY-1n-vgA" secondAttribute="bottom" constant="14" id="L4f-Hp-jkk"/>
                                             <constraint firstItem="wpl-kQ-Ul9" firstAttribute="top" secondItem="4Wz-mH-IkM" secondAttribute="bottom" id="LKe-LT-nPo"/>
                                             <constraint firstItem="4Wz-mH-IkM" firstAttribute="top" secondItem="y2Q-E7-mON" secondAttribute="top" id="LaV-sX-O88"/>
+                                            <constraint firstAttribute="bottom" secondItem="Yso-K6-Hyk" secondAttribute="bottom" id="MKw-EH-M9C"/>
                                             <constraint firstItem="4Wz-mH-IkM" firstAttribute="leading" secondItem="y2Q-E7-mON" secondAttribute="leading" priority="250" constant="11" id="Pm4-9i-yo6"/>
                                             <constraint firstAttribute="trailing" secondItem="4Wz-mH-IkM" secondAttribute="trailing" priority="250" constant="11" id="TWT-4m-gWL"/>
                                             <constraint firstItem="wpl-kQ-Ul9" firstAttribute="leading" secondItem="y2Q-E7-mON" secondAttribute="leading" id="VWA-qZ-Pbc"/>
                                             <constraint firstItem="xrn-fs-mMW" firstAttribute="top" secondItem="4Wz-mH-IkM" secondAttribute="bottom" constant="1" id="Wie-VU-Eev"/>
+                                            <constraint firstItem="0K6-Qu-lRc" firstAttribute="top" secondItem="xrn-fs-mMW" secondAttribute="bottom" constant="22" id="g0o-Aj-GsA"/>
+                                            <constraint firstAttribute="trailing" secondItem="qwH-ey-Qh0" secondAttribute="trailing" id="mp6-7h-uMG"/>
                                             <constraint firstAttribute="trailing" secondItem="wpl-kQ-Ul9" secondAttribute="trailing" id="nSy-xP-ZSU"/>
+                                            <constraint firstAttribute="trailing" secondItem="Yso-K6-Hyk" secondAttribute="trailing" id="xi8-H0-Iao"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -147,7 +186,7 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="hWo-5M-acu" secondAttribute="bottom" id="7UT-IG-vdt"/>
                             <constraint firstItem="hWo-5M-acu" firstAttribute="trailing" secondItem="eqq-Kc-cJD" secondAttribute="trailing" id="Bhg-G8-7jZ"/>
-                            <constraint firstItem="y2Q-E7-mON" firstAttribute="width" secondItem="5Xi-Rq-TNx" secondAttribute="width" priority="250" id="ObC-6G-hn3"/>
+                            <constraint firstItem="y2Q-E7-mON" firstAttribute="width" secondItem="5Xi-Rq-TNx" secondAttribute="width" id="ObC-6G-hn3"/>
                             <constraint firstItem="hWo-5M-acu" firstAttribute="top" secondItem="5Xi-Rq-TNx" secondAttribute="top" id="SoV-EZ-CoG"/>
                             <constraint firstItem="y2Q-E7-mON" firstAttribute="height" secondItem="5Xi-Rq-TNx" secondAttribute="height" priority="250" id="aeA-im-QTv"/>
                             <constraint firstItem="hWo-5M-acu" firstAttribute="leading" secondItem="eqq-Kc-cJD" secondAttribute="leading" id="iJU-Wq-xez"/>
@@ -160,8 +199,10 @@
                     </navigationItem>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
+                        <outlet property="Chitadelilvery" destination="szY-1n-vgA" id="Zf0-iy-jN6"/>
                         <outlet property="FoodSelectCollectionView" destination="4Wz-mH-IkM" id="1Sg-os-F8V"/>
                         <outlet property="MenuCollectionView" destination="xrn-fs-mMW" id="OUY-Fb-mDu"/>
+                        <outlet property="StoreTableView" destination="Yso-K6-Hyk" id="vmX-jV-l5h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ygw-tY-zoa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -189,6 +230,8 @@
     </scenes>
     <resources>
         <image name="arrow.left" catalog="system" width="64" height="48"/>
+        <image name="btnUnselectedChitadelivery" width="81" height="30"/>
+        <image name="btnUnselectedFilter" width="58" height="30"/>
         <image name="line" width="417" height="1.5"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
     </resources>
