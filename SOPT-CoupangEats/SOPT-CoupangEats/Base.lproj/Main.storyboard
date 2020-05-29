@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,21 +28,34 @@
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhn-gO-aB7">
                                         <rect key="frame" x="0.0" y="100" width="250" height="100"/>
                                         <state key="normal" title="MH 뷰보기"/>
+                                        <connections>
+                                            <action selector="moveVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xam-aI-Cfa"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zow-yy-r7V">
                                         <rect key="frame" x="0.0" y="200" width="250" height="100"/>
                                         <state key="normal" title="YJ 뷰보기"/>
                                         <connections>
+<<<<<<< HEAD
                                             <action selector="moveVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DeX-lO-Sac"/>
+=======
+                                            <action selector="moveVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H8z-Xz-NXw"/>
+>>>>>>> mingzzi_dev
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWd-04-0HO">
                                         <rect key="frame" x="0.0" y="300" width="250" height="100"/>
                                         <state key="normal" title="MK 뷰보기"/>
+                                        <connections>
+                                            <action selector="moveVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7d6-5l-q57"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x90-pp-u5E">
                                         <rect key="frame" x="0.0" y="400" width="250" height="100"/>
                                         <state key="normal" title="NS 뷰보기"/>
+                                        <connections>
+                                            <action selector="moveVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MOp-ad-Tdj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

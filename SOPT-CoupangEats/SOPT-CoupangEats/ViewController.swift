@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         
         let sb = UIStoryboard(name: storyboardName, bundle: nil)
         let nextVC = sb.instantiateViewController(withIdentifier: "\(storyboardName)Main")
-        
+        print(nextVC)
         nextVC.modalPresentationStyle = .fullScreen
         present(nextVC, animated: true)
     }
