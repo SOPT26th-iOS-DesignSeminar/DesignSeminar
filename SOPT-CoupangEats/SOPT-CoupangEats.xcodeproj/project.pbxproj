@@ -17,6 +17,28 @@
 		0660D67324796BD10081A8C0 /* MK.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0660D67224796BD10081A8C0 /* MK.storyboard */; };
 		0660D67524796BD70081A8C0 /* NS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0660D67424796BD70081A8C0 /* NS.storyboard */; };
 		0660D67824796C4F0081A8C0 /* SE.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0660D67724796C4F0081A8C0 /* SE.storyboard */; };
+		18B2A5A3248138E700026DD0 /* btnHomeSearch@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5A2248138E600026DD0 /* btnHomeSearch@3x.png */; };
+		18B2A5A924813B1300026DD0 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2A5A824813B1300026DD0 /* FoodViewController.swift */; };
+		18B2A5BE24813C8200026DD0 /* food_mexican.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5AA24813C8000026DD0 /* food_mexican.jpg */; };
+		18B2A5BF24813C8200026DD0 /* food_pizza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5AB24813C8000026DD0 /* food_pizza.jpg */; };
+		18B2A5C024813C8200026DD0 /* food_soupsoup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5AC24813C8000026DD0 /* food_soupsoup.jpg */; };
+		18B2A5C124813C8200026DD0 /* food_koreanfood.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5AD24813C8000026DD0 /* food_koreanfood.png */; };
+		18B2A5C224813C8200026DD0 /* food_japanese.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5AE24813C8000026DD0 /* food_japanese.jpg */; };
+		18B2A5C324813C8200026DD0 /* food_coffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5AF24813C8000026DD0 /* food_coffee.jpg */; };
+		18B2A5C424813C8200026DD0 /* food_dessert.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5B024813C8000026DD0 /* food_dessert.jpg */; };
+		18B2A5C524813C8200026DD0 /* food_ricecake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5B124813C8000026DD0 /* food_ricecake.jpg */; };
+		18B2A5C624813C8200026DD0 /* food_box.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5B224813C8100026DD0 /* food_box.jpg */; };
+		18B2A5C724813C8200026DD0 /* food_franchize.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5B324813C8100026DD0 /* food_franchize.jpg */; };
+		18B2A5C824813C8200026DD0 /* food_sandwich.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5B424813C8100026DD0 /* food_sandwich.jpg */; };
+		18B2A5C924813C8200026DD0 /* food_meat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5B524813C8100026DD0 /* food_meat.jpg */; };
+		18B2A5CA24813C8200026DD0 /* food_chinese.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5B624813C8100026DD0 /* food_chinese.jpg */; };
+		18B2A5CB24813C8200026DD0 /* food_chicken.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5B724813C8100026DD0 /* food_chicken.png */; };
+		18B2A5CC24813C8200026DD0 /* food_salad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5B824813C8100026DD0 /* food_salad.jpg */; };
+		18B2A5CD24813C8200026DD0 /* food_snack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5B924813C8100026DD0 /* food_snack.jpg */; };
+		18B2A5CE24813C8200026DD0 /* food_asian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5BA24813C8100026DD0 /* food_asian.jpg */; };
+		18B2A5CF24813C8200026DD0 /* food_soup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5BB24813C8100026DD0 /* food_soup.jpg */; };
+		18B2A5D024813C8200026DD0 /* food_roast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5BC24813C8100026DD0 /* food_roast.jpg */; };
+		18B2A5D124813C8200026DD0 /* food_fastfood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A5BD24813C8200026DD0 /* food_fastfood.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +54,28 @@
 		0660D67224796BD10081A8C0 /* MK.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MK.storyboard; sourceTree = "<group>"; };
 		0660D67424796BD70081A8C0 /* NS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NS.storyboard; sourceTree = "<group>"; };
 		0660D67724796C4F0081A8C0 /* SE.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SE.storyboard; sourceTree = "<group>"; };
+		18B2A5A2248138E600026DD0 /* btnHomeSearch@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btnHomeSearch@3x.png"; path = "SOPT-CoupangEats/Support/Assets.xcassets/btnHomeSearch@3x.png"; sourceTree = SOURCE_ROOT; };
+		18B2A5A824813B1300026DD0 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		18B2A5AA24813C8000026DD0 /* food_mexican.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_mexican.jpg; sourceTree = "<group>"; };
+		18B2A5AB24813C8000026DD0 /* food_pizza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_pizza.jpg; sourceTree = "<group>"; };
+		18B2A5AC24813C8000026DD0 /* food_soupsoup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_soupsoup.jpg; sourceTree = "<group>"; };
+		18B2A5AD24813C8000026DD0 /* food_koreanfood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food_koreanfood.png; sourceTree = "<group>"; };
+		18B2A5AE24813C8000026DD0 /* food_japanese.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_japanese.jpg; sourceTree = "<group>"; };
+		18B2A5AF24813C8000026DD0 /* food_coffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_coffee.jpg; sourceTree = "<group>"; };
+		18B2A5B024813C8000026DD0 /* food_dessert.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_dessert.jpg; sourceTree = "<group>"; };
+		18B2A5B124813C8000026DD0 /* food_ricecake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_ricecake.jpg; sourceTree = "<group>"; };
+		18B2A5B224813C8100026DD0 /* food_box.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_box.jpg; sourceTree = "<group>"; };
+		18B2A5B324813C8100026DD0 /* food_franchize.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_franchize.jpg; sourceTree = "<group>"; };
+		18B2A5B424813C8100026DD0 /* food_sandwich.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_sandwich.jpg; sourceTree = "<group>"; };
+		18B2A5B524813C8100026DD0 /* food_meat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_meat.jpg; sourceTree = "<group>"; };
+		18B2A5B624813C8100026DD0 /* food_chinese.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_chinese.jpg; sourceTree = "<group>"; };
+		18B2A5B724813C8100026DD0 /* food_chicken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food_chicken.png; sourceTree = "<group>"; };
+		18B2A5B824813C8100026DD0 /* food_salad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_salad.jpg; sourceTree = "<group>"; };
+		18B2A5B924813C8100026DD0 /* food_snack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_snack.jpg; sourceTree = "<group>"; };
+		18B2A5BA24813C8100026DD0 /* food_asian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_asian.jpg; sourceTree = "<group>"; };
+		18B2A5BB24813C8100026DD0 /* food_soup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_soup.jpg; sourceTree = "<group>"; };
+		18B2A5BC24813C8100026DD0 /* food_roast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_roast.jpg; sourceTree = "<group>"; };
+		18B2A5BD24813C8200026DD0 /* food_fastfood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_fastfood.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +151,28 @@
 			isa = PBXGroup;
 			children = (
 				0660D67224796BD10081A8C0 /* MK.storyboard */,
+				18B2A5A824813B1300026DD0 /* FoodViewController.swift */,
+				18B2A5BA24813C8100026DD0 /* food_asian.jpg */,
+				18B2A5B224813C8100026DD0 /* food_box.jpg */,
+				18B2A5B724813C8100026DD0 /* food_chicken.png */,
+				18B2A5B624813C8100026DD0 /* food_chinese.jpg */,
+				18B2A5AF24813C8000026DD0 /* food_coffee.jpg */,
+				18B2A5B024813C8000026DD0 /* food_dessert.jpg */,
+				18B2A5BD24813C8200026DD0 /* food_fastfood.jpg */,
+				18B2A5B324813C8100026DD0 /* food_franchize.jpg */,
+				18B2A5AE24813C8000026DD0 /* food_japanese.jpg */,
+				18B2A5AD24813C8000026DD0 /* food_koreanfood.png */,
+				18B2A5B524813C8100026DD0 /* food_meat.jpg */,
+				18B2A5AA24813C8000026DD0 /* food_mexican.jpg */,
+				18B2A5AB24813C8000026DD0 /* food_pizza.jpg */,
+				18B2A5B124813C8000026DD0 /* food_ricecake.jpg */,
+				18B2A5BC24813C8100026DD0 /* food_roast.jpg */,
+				18B2A5B824813C8100026DD0 /* food_salad.jpg */,
+				18B2A5B424813C8100026DD0 /* food_sandwich.jpg */,
+				18B2A5B924813C8100026DD0 /* food_snack.jpg */,
+				18B2A5BB24813C8100026DD0 /* food_soup.jpg */,
+				18B2A5AC24813C8000026DD0 /* food_soupsoup.jpg */,
+				18B2A5A2248138E600026DD0 /* btnHomeSearch@3x.png */,
 			);
 			path = MK;
 			sourceTree = "<group>";
@@ -193,14 +259,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B2A5D124813C8200026DD0 /* food_fastfood.jpg in Resources */,
+				18B2A5C424813C8200026DD0 /* food_dessert.jpg in Resources */,
+				18B2A5BF24813C8200026DD0 /* food_pizza.jpg in Resources */,
 				0660D657247968600081A8C0 /* LaunchScreen.storyboard in Resources */,
 				0660D67124796BCC0081A8C0 /* YJ.storyboard in Resources */,
 				0660D66F24796BC30081A8C0 /* MH.storyboard in Resources */,
+				18B2A5C524813C8200026DD0 /* food_ricecake.jpg in Resources */,
+				18B2A5BE24813C8200026DD0 /* food_mexican.jpg in Resources */,
+				18B2A5C024813C8200026DD0 /* food_soupsoup.jpg in Resources */,
+				18B2A5C824813C8200026DD0 /* food_sandwich.jpg in Resources */,
+				18B2A5CC24813C8200026DD0 /* food_salad.jpg in Resources */,
+				18B2A5C224813C8200026DD0 /* food_japanese.jpg in Resources */,
 				0660D654247968600081A8C0 /* Assets.xcassets in Resources */,
+				18B2A5C724813C8200026DD0 /* food_franchize.jpg in Resources */,
+				18B2A5D024813C8200026DD0 /* food_roast.jpg in Resources */,
 				0660D67824796C4F0081A8C0 /* SE.storyboard in Resources */,
+				18B2A5C924813C8200026DD0 /* food_meat.jpg in Resources */,
 				0660D67524796BD70081A8C0 /* NS.storyboard in Resources */,
 				0660D67324796BD10081A8C0 /* MK.storyboard in Resources */,
+				18B2A5CD24813C8200026DD0 /* food_snack.jpg in Resources */,
+				18B2A5CE24813C8200026DD0 /* food_asian.jpg in Resources */,
+				18B2A5C624813C8200026DD0 /* food_box.jpg in Resources */,
+				18B2A5CB24813C8200026DD0 /* food_chicken.png in Resources */,
+				18B2A5A3248138E700026DD0 /* btnHomeSearch@3x.png in Resources */,
+				18B2A5CF24813C8200026DD0 /* food_soup.jpg in Resources */,
 				0660D6522479685E0081A8C0 /* Main.storyboard in Resources */,
+				18B2A5C324813C8200026DD0 /* food_coffee.jpg in Resources */,
+				18B2A5C124813C8200026DD0 /* food_koreanfood.png in Resources */,
+				18B2A5CA24813C8200026DD0 /* food_chinese.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0660D64F2479685E0081A8C0 /* ViewController.swift in Sources */,
+				18B2A5A924813B1300026DD0 /* FoodViewController.swift in Sources */,
 				0660D64B2479685E0081A8C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
