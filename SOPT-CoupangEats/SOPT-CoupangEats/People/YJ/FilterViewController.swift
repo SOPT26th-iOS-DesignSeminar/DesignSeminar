@@ -9,12 +9,11 @@
 import UIKit
 
 class FilterViewController: UIViewController {
+ 
     @IBOutlet weak var TimeSlider1: UISlider!
     @IBOutlet weak var TimeSlider2: UISlider!
-    
     @IBOutlet weak var priceSlider1: UISlider!
     @IBOutlet weak var priceSlider2: UISlider!
-    
     
     var startTime : Int = 0
     var endTime : Int = 120
@@ -23,13 +22,9 @@ class FilterViewController: UIViewController {
     var endPrice : Int = 300000
     
     @IBOutlet var btnList: [UIButton]!
-    
     @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var applyButton: UIButton!
-    
- 
     @IBOutlet weak var timeLabel: UILabel!
-    
     @IBOutlet weak var priceLabel: UILabel!
     
     
@@ -280,17 +275,7 @@ class FilterViewController: UIViewController {
         setPriceLabel()
         setTimeLabel()
         
-        
-        
-        
-        
     }
-    
-    
-    
-    
-    
-    
     
     
 }
