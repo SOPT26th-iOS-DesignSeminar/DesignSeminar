@@ -36,11 +36,8 @@
                                         <rect key="frame" x="0.0" y="200" width="250" height="100"/>
                                         <state key="normal" title="YJ 뷰보기"/>
                                         <connections>
-<<<<<<< HEAD
                                             <action selector="moveVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DeX-lO-Sac"/>
-=======
                                             <action selector="moveVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H8z-Xz-NXw"/>
->>>>>>> mingzzi_dev
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWd-04-0HO">
