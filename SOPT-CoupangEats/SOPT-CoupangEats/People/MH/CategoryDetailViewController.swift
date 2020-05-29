@@ -27,6 +27,8 @@ class CategoryDetailViewController: UIViewController {
         }
     }
     
+    private var isSelected: [Bool] = Array(repeating: false, count: 5)
+    
     private var foodList: [FoodList] = []
     private var menuList: [MenuList] = []
     private var storeList: [StoreInformation] = []
@@ -40,6 +42,8 @@ class CategoryDetailViewController: UIViewController {
         MenuSelectCollectionView.dataSource = self
         StoreTableView.delegate = self
         StoreTableView.dataSource = self
+        
+        
         setFoodList()
         setMenuList()
         setStoreList()
@@ -51,7 +55,6 @@ class CategoryDetailViewController: UIViewController {
         let layout2 = MenuSelectCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout2.scrollDirection = .horizontal // 가로스크롤
         StoreTableView.separatorStyle = .none
-        self.navigationController?.navigationBar.topItem?.title = "찜/탕"
 
         
     }
@@ -79,6 +82,10 @@ class CategoryDetailViewController: UIViewController {
             , name: "백암왕순대 소머리국밥", time: "20분~30분", explain: "백암왕순대 소머리국밥은.용인백암왕순대의 전통을 이어가기 위해 ‘직접 삶아 우러내는’ 슬로건으로 초심을 첫 마음처럼 지켜가겠습니다.", point: "4.5 (307)", meter: "• 2.7 km")
         let store4 = StoreInformation(storeImg: .smile, name: "스마일한식", time: "20분~30분", explain: "신선한 재료로 남녀노소 가격부담없이 즐길 수 있도록 최고의 서비스를 제공하겠습니다!", point: "4.5 (307)", meter: "• 2.7 km")
         storeList = [store1,store2,store3,store4]
+    }
+    private func setNaviTitle() {
+        guard let title = self.title else {return}
+        navigationController?.navigationBar.topItem?.title = title
     }
     
 
@@ -123,6 +130,8 @@ extension CategoryDetailViewController: UICollectionViewDataSource {
         guard let foodCell = collectionView.dequeueReusableCell(withReuseIdentifier: FoodSelectCell.identifier, for: indexPath) as? FoodSelectCell
             else { return UICollectionViewCell() }
         foodCell.set(foodList[indexPath.row])
+            //navigationController?.navigationBar.topItem?.title = foodCell.titleLabel.text
+            //FoodSelectCollectionView.reloadData()
             return foodCell
         } else {
             guard let menuCell = collectionView.dequeueReusableCell(withReuseIdentifier: MenuSelectCell.identifier, for: indexPath) as? MenuSelectCell
@@ -137,12 +146,14 @@ extension CategoryDetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return storeList.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let storeCell = tableView.dequeueReusableCell(withIdentifier: StoreListCell.identifier, for:
         indexPath) as? StoreListCell else { return UITableViewCell() }
         storeCell.storeInformation(storeImg: storeList[indexPath.row].storeImg.getImageName(), name: storeList[indexPath.row].name, time: storeList[indexPath.row].time, explain: storeList[indexPath.row].explain, point: storeList[indexPath.row].point, meter: storeList[indexPath.row].meter)
         return storeCell
     }
+    
     
 }
 extension CategoryDetailViewController: UITableViewDelegate {

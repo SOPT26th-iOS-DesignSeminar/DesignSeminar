@@ -8,41 +8,37 @@
 
 import UIKit
 
+protocol ButtonSenderable {
+    func onClickButton(in indePath: IndexPath)
+}
+
 class FoodSelectCell: UICollectionViewCell {
+    var title : String = ""
     static let identifier: String = "FoodSelectCell"
     
-    @IBOutlet weak var foodImage: UIImageView!
-    @IBOutlet weak var titleButton: UIButton!
-    @IBOutlet weak var clickImage: UIImageView!
-    
-    @IBAction func onClick(_ sender: UIButton) {
-        if titleButton.isSelected {
-            foodImage.layer.borderWidth = 0
-            titleButton.setTitleColor(UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1), for:.normal)
-            titleButton.isSelected = false
-            titleButton.titleLabel?.font = UIFont.systemFont(ofSize: 12)
-            clickImage.image = UIImage(named: "")
-        } else {
-
-            clickImage.image = UIImage(named: "icnSelectBar")
-            foodImage.layer.borderWidth = 1
-            foodImage.layer.borderColor = CGColor(srgbRed: 13/255, green: 178/255, blue: 254/255, alpha: 1)
-            titleButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 12)
-            titleButton.titleLabel?.textColor = UIColor(red: 1/255, green: 175/255, blue: 255/255, alpha: 1)
-            //titleButton.setTitleColor(UIColor(red: 1/255, green: 175/255, blue: 255/255, alpha: 1), for:.normal)
-            titleButton.isSelected = true
+    override var isSelected: Bool {
+        willSet {
+            clickImage.image = newValue ? UIImage(named: "icnSelectBar") : nil
+            foodImage.layer.borderWidth = newValue ? 1 : 0
+            foodImage.layer.borderColor = newValue ? CGColor(srgbRed: 13/255, green: 178/255, blue: 254/255, alpha: 1) : nil
+            titleLabel.textColor = newValue ? UIColor(red: 1/255, green: 175/255, blue: 255/255, alpha: 1) : UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1)
+            
+            self.title = titleLabel.text!
             
         }
-        
     }
+    
+    @IBOutlet weak var foodImage: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var clickImage: UIImageView!
+    
     func set(_ foodInformation: FoodList) {
         foodImage.image = foodInformation.foodImg
-        titleButton.setTitle(foodInformation.foodTitle, for: .normal)
-        titleButton.contentEdgeInsets = UIEdgeInsets(top: (7+11+foodImage.frame.height), left: (foodImage.frame.height/2), bottom: 0, right: (foodImage.frame.height/2))
+        titleLabel.text = foodInformation.foodTitle
         foodImage.layer.cornerRadius = foodImage.frame.width / 2
         //foodImage.clipsToBounds = true
-        titleButton.titleLabel?.font = UIFont.systemFont(ofSize: CGFloat(12))
-        titleButton.setTitleColor(.black, for: .normal) //버튼 색 black으로
+        titleLabel.font = UIFont.systemFont(ofSize: CGFloat(12))
+        titleLabel.textColor = UIColor.black
         
     }
     

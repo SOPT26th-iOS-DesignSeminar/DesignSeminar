@@ -11,6 +11,18 @@ import UIKit
 class StoreListCell: UITableViewCell {
     static let identifier: String = "StoreListCell"
     
+    override var isSelected: Bool {
+        willSet {
+            print(newValue)
+        }
+    }
+    
+    override var isHighlighted: Bool {
+        willSet {
+            print(newValue)
+        }
+    }
+    
     @IBOutlet weak var StoreImageView: UIImageView!
     @IBOutlet weak var StoreNameLabel: UILabel!
     @IBOutlet weak var DeliveryTimeLabel: UILabel!
