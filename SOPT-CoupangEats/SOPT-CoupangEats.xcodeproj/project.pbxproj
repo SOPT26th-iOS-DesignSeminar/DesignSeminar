@@ -22,6 +22,10 @@
 		29F23E3F247C358D0039FB6A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F23E3E247C358D0039FB6A /* Category.swift */; };
 		29F23E43247C5CF20039FB6A /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F23E42247C5CF20039FB6A /* Restaurants.swift */; };
 		29F23E45247C601B0039FB6A /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F23E44247C601B0039FB6A /* RestaurantCell.swift */; };
+		29FF1C7A2480EA5C00C56484 /* AdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF1C792480EA5C00C56484 /* AdCell.swift */; };
+		29FF1C7C2480EFFC00C56484 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF1C7B2480EFFC00C56484 /* Ad.swift */; };
+		29FF1C7E2480F56500C56484 /* ReHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF1C7D2480F56500C56484 /* ReHomeViewController.swift */; };
+		29FF1C8024812B0300C56484 /* buttonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF1C7F24812B0300C56484 /* buttonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		29F23E3E247C358D0039FB6A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		29F23E42247C5CF20039FB6A /* Restaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
 		29F23E44247C601B0039FB6A /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		29FF1C792480EA5C00C56484 /* AdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCell.swift; sourceTree = "<group>"; };
+		29FF1C7B2480EFFC00C56484 /* Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
+		29FF1C7D2480F56500C56484 /* ReHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReHomeViewController.swift; sourceTree = "<group>"; };
+		29FF1C7F24812B0300C56484 /* buttonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +161,8 @@
 			children = (
 				29F23E3C247C35590039FB6A /* CategoryCell.swift */,
 				29F23E44247C601B0039FB6A /* RestaurantCell.swift */,
+				29FF1C792480EA5C00C56484 /* AdCell.swift */,
+				29FF1C7F24812B0300C56484 /* buttonCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -162,6 +172,7 @@
 			children = (
 				29F23E3E247C358D0039FB6A /* Category.swift */,
 				29F23E42247C5CF20039FB6A /* Restaurants.swift */,
+				29FF1C7B2480EFFC00C56484 /* Ad.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -170,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				29F23E39247C31810039FB6A /* HomeViewController.swift */,
+				29FF1C7D2480F56500C56484 /* ReHomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -251,9 +263,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0660D64F2479685E0081A8C0 /* ViewController.swift in Sources */,
+				29FF1C7A2480EA5C00C56484 /* AdCell.swift in Sources */,
+				29FF1C7C2480EFFC00C56484 /* Ad.swift in Sources */,
 				29F23E3F247C358D0039FB6A /* Category.swift in Sources */,
+				29FF1C7E2480F56500C56484 /* ReHomeViewController.swift in Sources */,
 				0660D64B2479685E0081A8C0 /* AppDelegate.swift in Sources */,
 				29F23E3A247C31810039FB6A /* HomeViewController.swift in Sources */,
+				29FF1C8024812B0300C56484 /* buttonCell.swift in Sources */,
 				29F23E43247C5CF20039FB6A /* Restaurants.swift in Sources */,
 				29F23E3D247C35590039FB6A /* CategoryCell.swift in Sources */,
 				29F23E45247C601B0039FB6A /* RestaurantCell.swift in Sources */,

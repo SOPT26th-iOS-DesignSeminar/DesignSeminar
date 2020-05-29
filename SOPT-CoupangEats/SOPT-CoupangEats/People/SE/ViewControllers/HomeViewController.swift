@@ -10,6 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    
     @IBOutlet weak var catCollectionView: UICollectionView!
     @IBOutlet weak var restCollectionView: UICollectionView!
     
@@ -19,13 +20,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setCatList()
-        catCollectionView.delegate = self
-        catCollectionView.dataSource = self
         
         setRestList()
-        restCollectionView.delegate = self
-        restCollectionView.dataSource = self
+//        restCollectionView.delegate = self
+//        restCollectionView.dataSource = self
     }
     
     func setCatList() {
@@ -46,49 +44,43 @@ class HomeViewController: UIViewController {
         restaurantList = [rest1, rest2, rest3]
     }
 }
-extension HomeViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if collectionView == self.catCollectionView {
-            return categoryList.count
-        }
-        if collectionView == self.restCollectionView {
-            return restaurantList.count
-        }
-        return 0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-  
-        if collectionView == catCollectionView {
-            guard let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCell.identifier, for: indexPath) as? CategoryCell else { return UICollectionViewCell() }
-            collectionCell.set(categoryList[indexPath.row])
-            return collectionCell
-        } else {
-            guard let restaurantCell = collectionView.dequeueReusableCell(withReuseIdentifier: RestaurantCell.identifier, for: indexPath) as? RestaurantCell else { return UICollectionViewCell() }
-            restaurantCell.set(restaurantList[indexPath.row])
-            return restaurantCell
-        }
-    }
-}
-extension HomeViewController: UICollectionViewDelegateFlowLayout {
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt
-        indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (collectionView.frame.width-40) / 2, height: collectionView.frame.height / 4)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
-    }
-    
-    
-}
-
+//extension HomeViewController: UICollectionViewDataSource {
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//
+//        if collectionView == self.restCollectionView {
+//            return restaurantList.count
+//        }
+//        return 0
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//
+//
+//            guard let restaurantCell = collectionView.dequeueReusableCell(withReuseIdentifier: RestaurantCell.identifier, for: indexPath) as? RestaurantCell else { return UICollectionViewCell() }
+//            restaurantCell.set(restaurantList[indexPath.row])
+//            return restaurantCell
+//
+//    }
+//}
+//extension HomeViewController: UICollectionViewDelegateFlowLayout {
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt
+//        indexPath: IndexPath) -> CGSize {
+//        return CGSize(width: (collectionView.frame.width-40) / 2, height: collectionView.frame.height / 4)
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+//        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        return 0
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+//        return 0
+//    }
+//
+//
+//}
+//

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RestaurantCell: UICollectionViewCell {
+class RestaurantCell: UITableViewCell {
     static let identifier: String = "RestaurantCell"
     
     @IBOutlet weak var restImgView: UIImageView!
@@ -20,10 +20,18 @@ class RestaurantCell: UICollectionViewCell {
     @IBOutlet weak var discountImgView: UIImageView!
     @IBOutlet weak var timeLabel: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+    
     func set(_ restaurantInformation: Restaurant) {
         restImgView.image = restaurantInformation.restImg
         restNameLabel.text = restaurantInformation.restName
-        if (restaurantInformation.isCheetah == true) {
+        if (restaurantInformation.isCheetah == true && cheetah.cheetahBtnClicked == true) {
             cheetahImgView.isHidden = false
         } else {
             cheetahImgView.isHidden = true
@@ -38,4 +46,10 @@ class RestaurantCell: UICollectionViewCell {
         }
         timeLabel.text = restaurantInformation.delivTime
     }
+    
+//    func setDateInformation(weatherImageName: String, date: String, subTitle: String) {
+//        weatherImageView.image = UIImage(named: weatherImageName)
+//        dateLabel.text = date
+//        subTitleLabel.text = subTitle
+//    }
 }
