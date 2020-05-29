@@ -47,6 +47,14 @@
 		3D237D432480208000E29043 /* FoodSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D237D422480208000E29043 /* FoodSelectCell.swift */; };
 		3D237D45248021EB00E29043 /* CategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D237D44248021EB00E29043 /* CategoryDetailViewController.swift */; };
 		3D5E2353247B62A20064125C /* MH.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5E2352247B62A20064125C /* MH.storyboard */; };
+		29F23E3D247C35590039FB6A /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F23E3C247C35590039FB6A /* CategoryCell.swift */; };
+		29F23E3F247C358D0039FB6A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F23E3E247C358D0039FB6A /* Category.swift */; };
+		29F23E43247C5CF20039FB6A /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F23E42247C5CF20039FB6A /* Restaurants.swift */; };
+		29F23E45247C601B0039FB6A /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F23E44247C601B0039FB6A /* RestaurantCell.swift */; };
+		29FF1C7A2480EA5C00C56484 /* AdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF1C792480EA5C00C56484 /* AdCell.swift */; };
+		29FF1C7C2480EFFC00C56484 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF1C7B2480EFFC00C56484 /* Ad.swift */; };
+		29FF1C7E2480F56500C56484 /* ReHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF1C7D2480F56500C56484 /* ReHomeViewController.swift */; };
+		29FF1C8024812B0300C56484 /* buttonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF1C7F24812B0300C56484 /* buttonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +100,14 @@
 		3D237D422480208000E29043 /* FoodSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSelectCell.swift; sourceTree = "<group>"; };
 		3D237D44248021EB00E29043 /* CategoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewController.swift; sourceTree = "<group>"; };
 		3D5E2352247B62A20064125C /* MH.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MH.storyboard; sourceTree = "<group>"; };
+		29F23E3C247C35590039FB6A /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		29F23E3E247C358D0039FB6A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		29F23E42247C5CF20039FB6A /* Restaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
+		29F23E44247C601B0039FB6A /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		29FF1C792480EA5C00C56484 /* AdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCell.swift; sourceTree = "<group>"; };
+		29FF1C7B2480EFFC00C56484 /* Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
+		29FF1C7D2480F56500C56484 /* ReHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReHomeViewController.swift; sourceTree = "<group>"; };
+		29FF1C7F24812B0300C56484 /* buttonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,9 +236,41 @@
 		0660D67624796C490081A8C0 /* SE */ = {
 			isa = PBXGroup;
 			children = (
+				29F23E41247C5CC50039FB6A /* ViewControllers */,
+				29F23E40247C5CB70039FB6A /* Structs */,
+				29F23E3B247C35450039FB6A /* Cells */,
 				0660D67724796C4F0081A8C0 /* SE.storyboard */,
 			);
 			path = SE;
+			sourceTree = "<group>";
+		};
+		29F23E3B247C35450039FB6A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				29F23E3C247C35590039FB6A /* CategoryCell.swift */,
+				29F23E44247C601B0039FB6A /* RestaurantCell.swift */,
+				29FF1C792480EA5C00C56484 /* AdCell.swift */,
+				29FF1C7F24812B0300C56484 /* buttonCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		29F23E40247C5CB70039FB6A /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				29F23E3E247C358D0039FB6A /* Category.swift */,
+				29F23E42247C5CF20039FB6A /* Restaurants.swift */,
+				29FF1C7B2480EFFC00C56484 /* Ad.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		29F23E41247C5CC50039FB6A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				29FF1C7D2480F56500C56484 /* ReHomeViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +382,15 @@
 				0660D64B2479685E0081A8C0 /* AppDelegate.swift in Sources */,
 				3D237D15247EC60100E29043 /* MenuList.swift in Sources */,
 				3D237D19247FBDC800E29043 /* StoreListCell.swift in Sources */,
+				29FF1C7A2480EA5C00C56484 /* AdCell.swift in Sources */,
+				29FF1C7C2480EFFC00C56484 /* Ad.swift in Sources */,
+				29F23E3F247C358D0039FB6A /* Category.swift in Sources */,
+				29FF1C7E2480F56500C56484 /* ReHomeViewController.swift in Sources */,
+				0660D64B2479685E0081A8C0 /* AppDelegate.swift in Sources */,
+				29FF1C8024812B0300C56484 /* buttonCell.swift in Sources */,
+				29F23E43247C5CF20039FB6A /* Restaurants.swift in Sources */,
+				29F23E3D247C35590039FB6A /* CategoryCell.swift in Sources */,
+				29F23E45247C601B0039FB6A /* RestaurantCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -463,7 +520,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -477,8 +534,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4JPTB87CQ5;
 				INFOPLIST_FILE = "SOPT-CoupangEats/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -487,6 +545,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ns.SOPT-CoupangEats";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -496,8 +555,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4JPTB87CQ5;
 				INFOPLIST_FILE = "SOPT-CoupangEats/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -506,6 +566,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ns.SOPT-CoupangEats";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -521,7 +582,7 @@
 				0660D65A247968600081A8C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		0660D65B247968600081A8C0 /* Build configuration list for PBXNativeTarget "SOPT-CoupangEats" */ = {
 			isa = XCConfigurationList;
@@ -530,7 +591,7 @@
 				0660D65D247968600081A8C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
