@@ -10,7 +10,6 @@ import UIKit
 
 class CategoryDetailViewController: UIViewController {
 
-    var Click = 0
     let ChitaOn : UIImage = UIImage(named:"btnSelectedChitadelilvery")!
     let ChitaOff : UIImage = UIImage(named:"btnUnselectedChitadelivery")!
     
@@ -19,13 +18,12 @@ class CategoryDetailViewController: UIViewController {
     @IBOutlet weak var MenuSelectCollectionView: UICollectionView!
     @IBOutlet weak var Chitadelilvery: UIButton!
     @IBAction func ChitadelilveryClick(_ sender: UIButton) {
-        if Click == 0 {
-            Chitadelilvery.setImage(ChitaOn, for: .normal)
-            Click = 1
-        } else {
+        if Chitadelilvery.isSelected {
             Chitadelilvery.setImage(ChitaOff, for: .normal)
-            Click = 0
-            
+            Chitadelilvery.isSelected = false
+        } else {
+            Chitadelilvery.setImage(ChitaOn, for: .normal)
+            Chitadelilvery.isSelected = true
         }
     }
     

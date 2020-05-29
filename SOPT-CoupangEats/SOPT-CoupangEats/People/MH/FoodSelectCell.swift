@@ -16,11 +16,23 @@ class FoodSelectCell: UICollectionViewCell {
     @IBOutlet weak var clickImage: UIImageView!
     
     @IBAction func onClick(_ sender: UIButton) {
-        clickImage.image = UIImage(named: "icnSelectBar")
-        foodImage.layer.borderWidth = 1
-        foodImage.layer.borderColor = CGColor(srgbRed: 13/255, green: 178/255, blue: 254/255, alpha: 1)
-        titleButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 12)
-        titleButton.setTitleColor(UIColor(red: 1/255, green: 175/255, blue: 255/255, alpha: 1), for:.normal)
+        if titleButton.isSelected {
+            foodImage.layer.borderWidth = 0
+            titleButton.setTitleColor(UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1), for:.normal)
+            titleButton.isSelected = false
+            titleButton.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+            clickImage.image = UIImage(named: "")
+        } else {
+
+            clickImage.image = UIImage(named: "icnSelectBar")
+            foodImage.layer.borderWidth = 1
+            foodImage.layer.borderColor = CGColor(srgbRed: 13/255, green: 178/255, blue: 254/255, alpha: 1)
+            titleButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 12)
+            titleButton.titleLabel?.textColor = UIColor(red: 1/255, green: 175/255, blue: 255/255, alpha: 1)
+            //titleButton.setTitleColor(UIColor(red: 1/255, green: 175/255, blue: 255/255, alpha: 1), for:.normal)
+            titleButton.isSelected = true
+            
+        }
         
     }
     func set(_ foodInformation: FoodList) {
