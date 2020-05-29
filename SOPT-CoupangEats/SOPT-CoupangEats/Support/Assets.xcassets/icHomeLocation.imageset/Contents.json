@@ -1,14 +1,14 @@
 {
   "images" : [
     {
-      "scale" : "1x",
       "idiom" : "universal",
-      "filename" : "icHomeLocation.png"
+      "filename" : "icHomeLocation.png",
+      "scale" : "1x"
     },
     {
-      "filename" : "icHomeLocation@2x.png",
       "scale" : "2x",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "filename" : "icHomeLocation@2x.png"
     },
     {
       "idiom" : "universal",

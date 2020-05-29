@@ -52,6 +52,7 @@
                                         <state key="normal" title="NS 뷰보기"/>
                                         <connections>
                                             <action selector="moveVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MOp-ad-Tdj"/>
+                                            <action selector="moveVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BKd-dc-Jel"/>
                                         </connections>
                                     </button>
                                 </subviews>

@@ -37,17 +37,17 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKE-J6-kci">
                                                 <rect key="frame" x="352" y="52" width="92" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button" image="btnHomeSearch.png"/>
+                                                <state key="normal" title="Button" image="btnHomeSearch"/>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_koreanfood.png" translatesAutoresizingMaskIntoConstraints="NO" id="vzx-uc-lmt">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_koreanfood" translatesAutoresizingMaskIntoConstraints="NO" id="vzx-uc-lmt">
                                                 <rect key="frame" x="22" y="135" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_chicken.png" translatesAutoresizingMaskIntoConstraints="NO" id="paT-2u-ebd">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_chicken" translatesAutoresizingMaskIntoConstraints="NO" id="paT-2u-ebd">
                                                 <rect key="frame" x="149" y="135" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_ricecake.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="f5z-HL-STc">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_ricecake" translatesAutoresizingMaskIntoConstraints="NO" id="f5z-HL-STc">
                                                 <rect key="frame" x="276" y="135" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -72,15 +72,15 @@
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_meat.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lvt-eb-JXw">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_meat" translatesAutoresizingMaskIntoConstraints="NO" id="lvt-eb-JXw">
                                                 <rect key="frame" x="22" y="279" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_soup.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GGe-pk-6yY">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_soup" translatesAutoresizingMaskIntoConstraints="NO" id="GGe-pk-6yY">
                                                 <rect key="frame" x="149" y="279" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_roast.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ByU-I9-Cwe">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_roast" translatesAutoresizingMaskIntoConstraints="NO" id="ByU-I9-Cwe">
                                                 <rect key="frame" x="276" y="279" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -105,15 +105,15 @@
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_pizza.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="egC-4y-wbg">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_pizza" translatesAutoresizingMaskIntoConstraints="NO" id="egC-4y-wbg">
                                                 <rect key="frame" x="22" y="423" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_chinese.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="g5C-Nf-8we">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_chinese" translatesAutoresizingMaskIntoConstraints="NO" id="g5C-Nf-8we">
                                                 <rect key="frame" x="149" y="423" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_japanese.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uuQ-iK-cSq">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_japanese" translatesAutoresizingMaskIntoConstraints="NO" id="uuQ-iK-cSq">
                                                 <rect key="frame" x="276" y="423" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -138,15 +138,15 @@
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_coffee.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Oxi-oL-SeI">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_coffee" translatesAutoresizingMaskIntoConstraints="NO" id="Oxi-oL-SeI">
                                                 <rect key="frame" x="22" y="567" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_dessert.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Qbk-cn-ycy">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_dessert" translatesAutoresizingMaskIntoConstraints="NO" id="Qbk-cn-ycy">
                                                 <rect key="frame" x="149" y="567" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_snack.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CDk-b0-b1C">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_snack" translatesAutoresizingMaskIntoConstraints="NO" id="CDk-b0-b1C">
                                                 <rect key="frame" x="276" y="567" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -171,15 +171,15 @@
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_asian.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jSs-0d-Uh8">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_asian" translatesAutoresizingMaskIntoConstraints="NO" id="jSs-0d-Uh8">
                                                 <rect key="frame" x="22" y="711" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_sandwich.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zhX-H9-QMW">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_sandwich" translatesAutoresizingMaskIntoConstraints="NO" id="zhX-H9-QMW">
                                                 <rect key="frame" x="148" y="711" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_salad.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="19C-JL-yWM">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_salad" translatesAutoresizingMaskIntoConstraints="NO" id="19C-JL-yWM">
                                                 <rect key="frame" x="275" y="711" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -204,15 +204,15 @@
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_fastfood.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XoF-q2-jWK">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_fastfood" translatesAutoresizingMaskIntoConstraints="NO" id="XoF-q2-jWK">
                                                 <rect key="frame" x="23" y="855" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_mexican.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="v8P-HU-Qyn">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_mexican" translatesAutoresizingMaskIntoConstraints="NO" id="v8P-HU-Qyn">
                                                 <rect key="frame" x="149" y="855" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_box.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="H5X-cn-KrN">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_box" translatesAutoresizingMaskIntoConstraints="NO" id="H5X-cn-KrN">
                                                 <rect key="frame" x="276" y="855" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -237,11 +237,11 @@
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_soupsoup.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="y32-KL-cOs">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_soupsoup" translatesAutoresizingMaskIntoConstraints="NO" id="y32-KL-cOs">
                                                 <rect key="frame" x="23" y="999" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_franchize.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9EX-ba-fuF">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_franchize" translatesAutoresizingMaskIntoConstraints="NO" id="9EX-ba-fuF">
                                                 <rect key="frame" x="148" y="999" width="117" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -295,6 +295,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9eE-ru-rnV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KoQ-NE-nYy">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -308,27 +309,27 @@
         </scene>
     </scenes>
     <resources>
-        <image name="btnHomeSearch.png" width="38" height="40"/>
-        <image name="food_asian.jpg" width="312" height="246"/>
-        <image name="food_box.jpg" width="312" height="246"/>
-        <image name="food_chicken.png" width="312" height="246"/>
-        <image name="food_chinese.jpg" width="312" height="246"/>
-        <image name="food_coffee.jpg" width="312" height="246"/>
-        <image name="food_dessert.jpg" width="312" height="246"/>
-        <image name="food_fastfood.jpg" width="312" height="246"/>
-        <image name="food_franchize.jpg" width="312" height="246"/>
-        <image name="food_japanese.jpg" width="312" height="246"/>
-        <image name="food_koreanfood.png" width="312" height="246"/>
-        <image name="food_meat.jpg" width="312" height="246"/>
-        <image name="food_mexican.jpg" width="312" height="246"/>
-        <image name="food_pizza.jpg" width="312" height="246"/>
-        <image name="food_ricecake.jpg" width="312" height="246"/>
-        <image name="food_roast.jpg" width="312" height="246"/>
-        <image name="food_salad.jpg" width="312" height="246"/>
-        <image name="food_sandwich.jpg" width="312" height="246"/>
-        <image name="food_snack.jpg" width="312" height="246"/>
-        <image name="food_soup.jpg" width="312" height="246"/>
-        <image name="food_soupsoup.jpg" width="312" height="246"/>
+        <image name="btnHomeSearch" width="38" height="40"/>
+        <image name="food_asian" width="312" height="246"/>
+        <image name="food_box" width="312" height="246"/>
+        <image name="food_chicken" width="312" height="246"/>
+        <image name="food_chinese" width="312" height="246"/>
+        <image name="food_coffee" width="312" height="246"/>
+        <image name="food_dessert" width="312" height="246"/>
+        <image name="food_fastfood" width="312" height="246"/>
+        <image name="food_franchize" width="312" height="246"/>
+        <image name="food_japanese" width="312" height="246"/>
+        <image name="food_koreanfood" width="312" height="246"/>
+        <image name="food_meat" width="312" height="246"/>
+        <image name="food_mexican" width="312" height="246"/>
+        <image name="food_pizza" width="312" height="246"/>
+        <image name="food_ricecake" width="312" height="246"/>
+        <image name="food_roast" width="312" height="246"/>
+        <image name="food_salad" width="312" height="246"/>
+        <image name="food_sandwich" width="312" height="246"/>
+        <image name="food_snack" width="312" height="246"/>
+        <image name="food_soup" width="312" height="246"/>
+        <image name="food_soupsoup" width="312" height="246"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
     </resources>
 </document>
