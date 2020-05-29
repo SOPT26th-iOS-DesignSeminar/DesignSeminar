@@ -31,7 +31,7 @@ class FilterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let thumbImage = UIImage(named: "btnFilterControl.png")
+        let thumbImage = UIImage(named: "btnFilterControl")
         
         TimeSlider1.setThumbImage(thumbImage, for : .normal)
         TimeSlider2.setThumbImage(thumbImage, for : .normal)
