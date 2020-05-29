@@ -43,7 +43,7 @@ class CategoryDetailViewController: UIViewController {
         StoreTableView.delegate = self
         StoreTableView.dataSource = self
         
-        
+        setNaviTitle()
         setFoodList()
         setMenuList()
         setStoreList()
@@ -55,6 +55,7 @@ class CategoryDetailViewController: UIViewController {
         let layout2 = MenuSelectCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout2.scrollDirection = .horizontal // 가로스크롤
         StoreTableView.separatorStyle = .none
+        //self.navigationController?.navigationBar.topItem?.title =
 
         
     }
@@ -91,6 +92,11 @@ class CategoryDetailViewController: UIViewController {
 
 }
 extension CategoryDetailViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cells = collectionView.cellForItem(at: indexPath) as? FoodSelectCell
+        navigationController?.navigationBar.topItem?.title = cells?.titleLabel.text
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt
     indexPath: IndexPath) -> CGSize {
         if collectionView == FoodSelectCollectionView {

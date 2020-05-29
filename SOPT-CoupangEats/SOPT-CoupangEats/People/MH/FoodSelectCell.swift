@@ -13,7 +13,7 @@ protocol ButtonSenderable {
 }
 
 class FoodSelectCell: UICollectionViewCell {
-    var title : String = ""
+    //var title : String = ""
     static let identifier: String = "FoodSelectCell"
     
     override var isSelected: Bool {
@@ -22,9 +22,7 @@ class FoodSelectCell: UICollectionViewCell {
             foodImage.layer.borderWidth = newValue ? 1 : 0
             foodImage.layer.borderColor = newValue ? CGColor(srgbRed: 13/255, green: 178/255, blue: 254/255, alpha: 1) : nil
             titleLabel.textColor = newValue ? UIColor(red: 1/255, green: 175/255, blue: 255/255, alpha: 1) : UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1)
-            
-            self.title = titleLabel.text!
-            
+        
         }
     }
     
