@@ -173,16 +173,16 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXg-6T-Ugb">
-                                                    <rect key="frame" x="257" y="6" width="80" height="30"/>
-                                                    <state key="normal" title="Button" image="btnUnselectedChitadelivery"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXg-6T-Ugb">
+                                                    <rect key="frame" x="248" y="5.5" width="81" height="30"/>
+                                                    <state key="normal" image="btnUnselectedChitadelivery"/>
                                                     <connections>
                                                         <action selector="showCheetah:" destination="bhZ-fM-Ks0" eventType="touchUpInside" id="fGf-8x-4sD"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOS-xt-jYr">
-                                                    <rect key="frame" x="345" y="6" width="58" height="30"/>
-                                                    <state key="normal" title="Button" image="btnUnselectedFilter"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOS-xt-jYr">
+                                                    <rect key="frame" x="345" y="5.5" width="58" height="30"/>
+                                                    <state key="normal" image="btnUnselectedFilter"/>
                                                 </button>
                                             </subviews>
                                             <constraints>

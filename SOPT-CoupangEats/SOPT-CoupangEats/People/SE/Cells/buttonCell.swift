@@ -24,8 +24,12 @@ class buttonCell: UITableViewCell {
     @IBAction func showCheetah(_ sender: Any) {
         if (cheetah.cheetahBtnClicked == false){
             cheetah.cheetahBtnClicked = true
+            cheetahBtn.setBackgroundImage(UIImage(named: "btnSelectedChitadelilvery"), for: .normal)
+            
         } else {
             cheetah.cheetahBtnClicked = false
+            cheetahBtn.setBackgroundImage(UIImage(named: "btnUnselectedChitadelivery"), for: .normal)
+            
         }
     }
 }
