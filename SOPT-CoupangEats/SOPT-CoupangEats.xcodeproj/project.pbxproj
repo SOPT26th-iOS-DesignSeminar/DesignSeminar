@@ -22,6 +22,7 @@
 		0660D67524796BD70081A8C0 /* NS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0660D67424796BD70081A8C0 /* NS.storyboard */; };
 		0660D67824796C4F0081A8C0 /* SE.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0660D67724796C4F0081A8C0 /* SE.storyboard */; };
 		0684FC4D247ED35D00532B77 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0684FC4C247ED35D00532B77 /* UIView+Extension.swift */; };
+		0F0ED880362A273C457A4B4F /* Pods_SOPT_CoupangEats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC4C2EC4512BD952B4478B9 /* Pods_SOPT_CoupangEats.framework */; };
 		18B2A5A924813B1300026DD0 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2A5A824813B1300026DD0 /* FoodViewController.swift */; };
 		29F23E3D247C35590039FB6A /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F23E3C247C35590039FB6A /* CategoryCell.swift */; };
 		29F23E3F247C358D0039FB6A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F23E3E247C358D0039FB6A /* Category.swift */; };
@@ -77,6 +78,9 @@
 		3D237D422480208000E29043 /* FoodSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSelectCell.swift; sourceTree = "<group>"; };
 		3D237D44248021EB00E29043 /* CategoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewController.swift; sourceTree = "<group>"; };
 		3D5E2352247B62A20064125C /* MH.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MH.storyboard; sourceTree = "<group>"; };
+		9BC4C2EC4512BD952B4478B9 /* Pods_SOPT_CoupangEats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOPT_CoupangEats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB2CF35D362A25EE63FBC79C /* Pods-SOPT-CoupangEats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT-CoupangEats.release.xcconfig"; path = "Target Support Files/Pods-SOPT-CoupangEats/Pods-SOPT-CoupangEats.release.xcconfig"; sourceTree = "<group>"; };
+		D266FDF6387323EB1A562910 /* Pods-SOPT-CoupangEats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT-CoupangEats.debug.xcconfig"; path = "Target Support Files/Pods-SOPT-CoupangEats/Pods-SOPT-CoupangEats.debug.xcconfig"; sourceTree = "<group>"; };
 		ECB08DF0247D58D700903E18 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F0ED880362A273C457A4B4F /* Pods_SOPT_CoupangEats.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +129,8 @@
 			children = (
 				0660D6492479685E0081A8C0 /* SOPT-CoupangEats */,
 				0660D6482479685E0081A8C0 /* Products */,
+				6595E1D3D1A18149063ED1D2 /* Pods */,
+				6142C11277F14FE846C465D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -260,6 +267,24 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		6142C11277F14FE846C465D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BC4C2EC4512BD952B4478B9 /* Pods_SOPT_CoupangEats.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6595E1D3D1A18149063ED1D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D266FDF6387323EB1A562910 /* Pods-SOPT-CoupangEats.debug.xcconfig */,
+				CB2CF35D362A25EE63FBC79C /* Pods-SOPT-CoupangEats.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,9 +292,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0660D65B247968600081A8C0 /* Build configuration list for PBXNativeTarget "SOPT-CoupangEats" */;
 			buildPhases = (
+				573D2E11039FD73E1BA77284 /* [CP] Check Pods Manifest.lock */,
 				0660D6432479685E0081A8C0 /* Sources */,
 				0660D6442479685E0081A8C0 /* Frameworks */,
 				0660D6452479685E0081A8C0 /* Resources */,
+				55ED6444BB0A8CF2644F768B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -330,6 +357,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55ED6444BB0A8CF2644F768B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SOPT-CoupangEats/Pods-SOPT-CoupangEats-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SOPT-CoupangEats/Pods-SOPT-CoupangEats-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SOPT-CoupangEats/Pods-SOPT-CoupangEats-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		573D2E11039FD73E1BA77284 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SOPT-CoupangEats-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0660D6432479685E0081A8C0 /* Sources */ = {
@@ -503,6 +572,7 @@
 		};
 		0660D65C247968600081A8C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D266FDF6387323EB1A562910 /* Pods-SOPT-CoupangEats.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -524,6 +594,7 @@
 		};
 		0660D65D247968600081A8C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB2CF35D362A25EE63FBC79C /* Pods-SOPT-CoupangEats.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
