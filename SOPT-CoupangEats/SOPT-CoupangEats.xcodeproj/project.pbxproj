@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -39,6 +39,10 @@
 		3D237D1B247FBEF100E29043 /* StoreInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D237D1A247FBEF100E29043 /* StoreInformation.swift */; };
 		3D237D432480208000E29043 /* FoodSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D237D422480208000E29043 /* FoodSelectCell.swift */; };
 		3D237D45248021EB00E29043 /* CategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D237D44248021EB00E29043 /* CategoryDetailViewController.swift */; };
+		3D38B2BE2488BC0E000A774C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38B2BD2488BC0E000A774C /* APIConstants.swift */; };
+		3D38B2C024895D56000A774C /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38B2BF24895D56000A774C /* CategoryData.swift */; };
+		3D38B2C2248960FB000A774C /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38B2C1248960FB000A774C /* NetworkResult.swift */; };
+		3D38B2C424896125000A774C /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38B2C324896125000A774C /* CategoryService.swift */; };
 		3D5E2353247B62A20064125C /* MH.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5E2352247B62A20064125C /* MH.storyboard */; };
 		ECB08DF1247D58D700903E18 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB08DF0247D58D700903E18 /* FilterViewController.swift */; };
 /* End PBXBuildFile section */
@@ -77,6 +81,10 @@
 		3D237D1A247FBEF100E29043 /* StoreInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInformation.swift; sourceTree = "<group>"; };
 		3D237D422480208000E29043 /* FoodSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSelectCell.swift; sourceTree = "<group>"; };
 		3D237D44248021EB00E29043 /* CategoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewController.swift; sourceTree = "<group>"; };
+		3D38B2BD2488BC0E000A774C /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		3D38B2BF24895D56000A774C /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
+		3D38B2C1248960FB000A774C /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		3D38B2C324896125000A774C /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
 		3D5E2352247B62A20064125C /* MH.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MH.storyboard; sourceTree = "<group>"; };
 		9BC4C2EC4512BD952B4478B9 /* Pods_SOPT_CoupangEats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOPT_CoupangEats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2CF35D362A25EE63FBC79C /* Pods-SOPT-CoupangEats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT-CoupangEats.release.xcconfig"; path = "Target Support Files/Pods-SOPT-CoupangEats/Pods-SOPT-CoupangEats.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,14 +215,12 @@
 		0660D6632479698B0081A8C0 /* MH */ = {
 			isa = PBXGroup;
 			children = (
-				3D5E2352247B62A20064125C /* MH.storyboard */,
+				3DB41EF0248E9B6600C826D7 /* Source */,
+				3DB41EEF248E9B5700C826D7 /* Resource */,
 				3D237CEC247CDF2A00E29043 /* FoodList.swift */,
 				3D237D14247EC60100E29043 /* MenuList.swift */,
-				3D237D16247EDDEF00E29043 /* MenuSelectCell.swift */,
-				3D237D18247FBDC800E29043 /* StoreListCell.swift */,
 				3D237D1A247FBEF100E29043 /* StoreInformation.swift */,
-				3D237D422480208000E29043 /* FoodSelectCell.swift */,
-				3D237D44248021EB00E29043 /* CategoryDetailViewController.swift */,
+				3D38B2BF24895D56000A774C /* CategoryData.swift */,
 			);
 			path = MH;
 			sourceTree = "<group>";
@@ -267,6 +273,60 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		3DB41EEF248E9B5700C826D7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3DB41EF4248E9BDF00C826D7 /* Storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3DB41EF0248E9B6600C826D7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3DB41EF3248E9BBE00C826D7 /* Cell */,
+				3DB41EF2248E9B8D00C826D7 /* Service */,
+				3DB41EF1248E9B7500C826D7 /* ViewController */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3DB41EF1248E9B7500C826D7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3D237D44248021EB00E29043 /* CategoryDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3DB41EF2248E9B8D00C826D7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3D38B2BD2488BC0E000A774C /* APIConstants.swift */,
+				3D38B2C1248960FB000A774C /* NetworkResult.swift */,
+				3D38B2C324896125000A774C /* CategoryService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3DB41EF3248E9BBE00C826D7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3D237D422480208000E29043 /* FoodSelectCell.swift */,
+				3D237D16247EDDEF00E29043 /* MenuSelectCell.swift */,
+				3D237D18247FBDC800E29043 /* StoreListCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3DB41EF4248E9BDF00C826D7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3D5E2352247B62A20064125C /* MH.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		6142C11277F14FE846C465D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,7 +341,6 @@
 				D266FDF6387323EB1A562910 /* Pods-SOPT-CoupangEats.debug.xcconfig */,
 				CB2CF35D362A25EE63FBC79C /* Pods-SOPT-CoupangEats.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -406,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECB08DF1247D58D700903E18 /* FilterViewController.swift in Sources */,
+				3D38B2C024895D56000A774C /* CategoryData.swift in Sources */,
 				3D237D1B247FBEF100E29043 /* StoreInformation.swift in Sources */,
 				3D237D432480208000E29043 /* FoodSelectCell.swift in Sources */,
 				3D237CED247CDF2A00E29043 /* FoodList.swift in Sources */,
@@ -413,6 +473,7 @@
 				062D4BF2247EA1F70069DE6C /* MainViewController.swift in Sources */,
 				062D4BF9247EAA4A0069DE6C /* MainCategoryCollectionViewCell.swift in Sources */,
 				0684FC4D247ED35D00532B77 /* UIView+Extension.swift in Sources */,
+				3D38B2C424896125000A774C /* CategoryService.swift in Sources */,
 				0660D64F2479685E0081A8C0 /* ViewController.swift in Sources */,
 				18B2A5A924813B1300026DD0 /* FoodViewController.swift in Sources */,
 				3D237D17247EDDEF00E29043 /* MenuSelectCell.swift in Sources */,
@@ -425,9 +486,11 @@
 				29FF1C7E2480F56500C56484 /* ReHomeViewController.swift in Sources */,
 				0660D64B2479685E0081A8C0 /* AppDelegate.swift in Sources */,
 				29FF1C8024812B0300C56484 /* buttonCell.swift in Sources */,
+				3D38B2C2248960FB000A774C /* NetworkResult.swift in Sources */,
 				29F23E43247C5CF20039FB6A /* Restaurants.swift in Sources */,
 				29F23E3D247C35590039FB6A /* CategoryCell.swift in Sources */,
 				29F23E45247C601B0039FB6A /* RestaurantCell.swift in Sources */,
+				3D38B2BE2488BC0E000A774C /* APIConstants.swift in Sources */,
 				062D4BF7247EAA3D0069DE6C /* BannerCollectionViewCell.swift in Sources */,
 				062D4BFB247EAA620069DE6C /* StoreHeaderTableViewCell.swift in Sources */,
 				062D4BF5247EAA2B0069DE6C /* StoreTableViewCell.swift in Sources */,
