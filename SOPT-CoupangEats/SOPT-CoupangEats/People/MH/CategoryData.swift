@@ -11,7 +11,7 @@ import Foundation
 struct Project: Codable {
     let status: Int
     let success: Bool
-    let data: DataClass
+    let data: [DataClass]
 }
 
 struct DataClass: Codable {

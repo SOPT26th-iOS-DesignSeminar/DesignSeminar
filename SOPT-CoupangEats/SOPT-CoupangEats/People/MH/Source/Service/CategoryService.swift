@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 
 struct CategoryService {
+    private init() {}
     static let shared = CategoryService()
     func categoryloading(completion: @escaping (NetworkResult<Any>)->Void) {
         let URL = APIConstants.categoryURL

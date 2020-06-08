@@ -12,7 +12,7 @@ class CategoryDetailViewController: UIViewController {
 
     let ChitaOn : UIImage = UIImage(named:"btnSelectedChitadelilvery")!
     let ChitaOff : UIImage = UIImage(named:"btnUnselectedChitadelivery")!
-    
+    var model: Project?
     @IBOutlet weak var StoreTableView: UITableView!
     @IBOutlet weak var FoodSelectCollectionView: UICollectionView!
     @IBOutlet weak var MenuSelectCollectionView: UICollectionView!
@@ -29,13 +29,15 @@ class CategoryDetailViewController: UIViewController {
     
     private var isSelected: [Bool] = Array(repeating: false, count: 5)
     
-    private var foodList: [FoodList] = []
+    //private var foodList: [FoodList] = []
     private var menuList: [MenuList] = []
     private var storeList: [StoreInformation] = []
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        get()
+        
         FoodSelectCollectionView.delegate = self
         FoodSelectCollectionView.dataSource = self
         MenuSelectCollectionView.delegate = self
@@ -44,7 +46,7 @@ class CategoryDetailViewController: UIViewController {
         StoreTableView.dataSource = self
         
         setNaviTitle()
-        setFoodList()
+        //setFoodList()
         setMenuList()
         setStoreList()
         self.navigationController?.navigationBar.shadowImage = UIImage()
@@ -59,6 +61,7 @@ class CategoryDetailViewController: UIViewController {
 
         
     }
+    /*
     private func setFoodList() {
         let food1 = FoodList(foodName: "imgBunsik", title: "분식")
         let food2 = FoodList(foodName: "imgChicken", title: "치킨")
@@ -66,7 +69,7 @@ class CategoryDetailViewController: UIViewController {
         let food4 = FoodList(foodName: "imgSteamedFood", title: "찜/탕")
         let food5 = FoodList(foodName: "imgGrilledFood", title: "구이")
         foodList = [food1,food2,food3,food4,food5]
-    }
+    }*/
     private func setMenuList() {
         let menu1 = MenuList(menutitle: "찜닭")
         let menu2 = MenuList(menutitle: "갈비탕")
@@ -125,7 +128,9 @@ extension CategoryDetailViewController: UICollectionViewDelegateFlowLayout {
 extension CategoryDetailViewController: UICollectionViewDataSource {
      func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == FoodSelectCollectionView {
-        return foodList.count
+            model?.data.
+            return model?.data.count ?? 0
+            
         } else {
             return menuList.count
         }
@@ -135,9 +140,8 @@ extension CategoryDetailViewController: UICollectionViewDataSource {
         if collectionView == FoodSelectCollectionView {
         guard let foodCell = collectionView.dequeueReusableCell(withReuseIdentifier: FoodSelectCell.identifier, for: indexPath) as? FoodSelectCell
             else { return UICollectionViewCell() }
-        foodCell.set(foodList[indexPath.row])
-            //navigationController?.navigationBar.topItem?.title = foodCell.titleLabel.text
-            //FoodSelectCollectionView.reloadData()
+        //foodCell.set(foodList[indexPath.row])
+            foodCell.titleLabel.text = model?.data[indexPath]
             return foodCell
         } else {
             guard let menuCell = collectionView.dequeueReusableCell(withReuseIdentifier: MenuSelectCell.identifier, for: indexPath) as? MenuSelectCell
@@ -165,5 +169,32 @@ extension CategoryDetailViewController: UITableViewDataSource {
 extension CategoryDetailViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 300
+    }
+}
+
+extension CategoryDetailViewController {
+    func get(){
+        CategoryService.shared.categoryloading() {
+            [weak self]
+            data in
+            guard let `self` = self else {return}
+            switch data {
+                
+            case .success(let res):
+                let response = res as! Project
+                self.model = response
+                self.FoodSelectCollectionView.reloadData()
+                
+            case .requestErr(let message):
+                print(".requestErr")
+            case .pathErr:
+                print(".pathErr")
+            case .serverErr:
+                print(".serverErr")
+            case .networkFail:
+                print(".networkFail")
+            }
+            
+        }
     }
 }
