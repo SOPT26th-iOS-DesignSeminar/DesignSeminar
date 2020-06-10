@@ -22,7 +22,7 @@ struct CateList: Codable {
     let idx: Int
     let name: String
 }
-/*
+
 struct FoodPro<T: Codable>: Codable {
     let status: Int
     let success: Bool
@@ -52,4 +52,4 @@ struct FoodLists: Codable {
         case deliveryFee = "delivery_fee"
     }
 }
-*/
+

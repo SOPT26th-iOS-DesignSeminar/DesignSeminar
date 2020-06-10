@@ -18,6 +18,7 @@ class StoreListCell: UITableViewCell {
     @IBOutlet weak var StarPointLabel: UILabel!
     @IBOutlet weak var MeterLabel: UILabel!
     
+    @IBOutlet weak var ChitaImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

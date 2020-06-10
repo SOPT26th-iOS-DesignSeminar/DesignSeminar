@@ -45,7 +45,6 @@
 		3D38B2C424896125000A774C /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38B2C324896125000A774C /* CategoryService.swift */; };
 		3D5E2353247B62A20064125C /* MH.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5E2352247B62A20064125C /* MH.storyboard */; };
 		3DB41EF6248EAAAE00C826D7 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EF5248EAAAE00C826D7 /* UIImageView+Extension.swift */; };
-		3DB41EF82490CFAE00C826D7 /* StoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EF72490CFAE00C826D7 /* StoreData.swift */; };
 		ECB08DF1247D58D700903E18 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB08DF0247D58D700903E18 /* FilterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,7 +88,6 @@
 		3D38B2C324896125000A774C /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
 		3D5E2352247B62A20064125C /* MH.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MH.storyboard; sourceTree = "<group>"; };
 		3DB41EF5248EAAAE00C826D7 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
-		3DB41EF72490CFAE00C826D7 /* StoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreData.swift; sourceTree = "<group>"; };
 		9BC4C2EC4512BD952B4478B9 /* Pods_SOPT_CoupangEats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOPT_CoupangEats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2CF35D362A25EE63FBC79C /* Pods-SOPT-CoupangEats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT-CoupangEats.release.xcconfig"; path = "Target Support Files/Pods-SOPT-CoupangEats/Pods-SOPT-CoupangEats.release.xcconfig"; sourceTree = "<group>"; };
 		D266FDF6387323EB1A562910 /* Pods-SOPT-CoupangEats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT-CoupangEats.debug.xcconfig"; path = "Target Support Files/Pods-SOPT-CoupangEats/Pods-SOPT-CoupangEats.debug.xcconfig"; sourceTree = "<group>"; };
@@ -226,7 +224,6 @@
 				3D237D1A247FBEF100E29043 /* StoreInformation.swift */,
 				3D38B2BF24895D56000A774C /* CategoryData.swift */,
 				3DB41EF5248EAAAE00C826D7 /* UIImageView+Extension.swift */,
-				3DB41EF72490CFAE00C826D7 /* StoreData.swift */,
 			);
 			path = MH;
 			sourceTree = "<group>";
@@ -487,7 +484,6 @@
 				0660D64B2479685E0081A8C0 /* AppDelegate.swift in Sources */,
 				3D237D15247EC60100E29043 /* MenuList.swift in Sources */,
 				3D237D19247FBDC800E29043 /* StoreListCell.swift in Sources */,
-				3DB41EF82490CFAE00C826D7 /* StoreData.swift in Sources */,
 				29FF1C7A2480EA5C00C56484 /* AdCell.swift in Sources */,
 				29FF1C7C2480EFFC00C56484 /* Ad.swift in Sources */,
 				29F23E3F247C358D0039FB6A /* Category.swift in Sources */,

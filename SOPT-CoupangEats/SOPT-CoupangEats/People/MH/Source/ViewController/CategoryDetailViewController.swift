@@ -165,11 +165,14 @@ extension CategoryDetailViewController: UITableViewDataSource {
         guard let storeCell = tableView.dequeueReusableCell(withIdentifier: StoreListCell.identifier, for:
         indexPath) as? StoreListCell else { return UITableViewCell() }
         storeCell.StoreNameLabel.text = StoreModel?.data.result[indexPath.row].name
-        storeCell.DeliveryTimeLabel.text = String(StoreModel?.data.result[indexPath.row].avgDeliveryTime ?? 0)
+        storeCell.DeliveryTimeLabel.text = String(StoreModel?.data.result[indexPath.row].avgDeliveryTime ?? 0)+"분"
         storeCell.StoreExplainTextView.text = StoreModel?.data.result[indexPath.row].introduce
         storeCell.StoreImageView.setImageCupang(StoreModel?.data.result[indexPath.row].picture)
         storeCell.StarPointLabel.text = String(StoreModel?.data.result[indexPath.row].rating ?? 0)
-        storeCell.MeterLabel.text = String(StoreModel?.data.result[indexPath.row].distance ?? 0)
+        storeCell.MeterLabel.text = "• "+String(StoreModel?.data.result[indexPath.row].distance ?? 0)
+        if StoreModel?.data.result[indexPath.row].cheetaDelivery == 1 {
+            storeCell.ChitaImageView.image = UIImage(named : "imgChitadellivery")
+        }
         return storeCell
     }
     
