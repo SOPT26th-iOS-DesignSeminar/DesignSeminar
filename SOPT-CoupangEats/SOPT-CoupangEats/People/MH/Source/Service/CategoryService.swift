@@ -25,7 +25,7 @@ struct CategoryService {
                         case 200:
                             do {
                                 let decoder = JSONDecoder()
-                                let result = try decoder.decode(Projects<DataClass>.self, from: value)
+                                let result = try decoder.decode(ListPro<DataClass>.self, from: value)
                                 
                                 completion(.success(result))
                             } catch {
@@ -51,7 +51,7 @@ struct CategoryService {
                         case 200:
                             do {
                                 let decoder = JSONDecoder()
-                                let result = try decoder.decode(Projects<DataClass>.self, from: value)
+                                let result = try decoder.decode(FoodPro<DataClass2>.self, from: value)
                                 
                                 completion(.success(result))
                             } catch {

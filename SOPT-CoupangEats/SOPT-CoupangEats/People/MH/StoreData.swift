@@ -1,28 +1,13 @@
 //
-//  CategoryData.swift
+//  StoreData.swift
 //  SOPT-CoupangEats
 //
-//  Created by 김민희 on 05/06/2020.
+//  Created by 김민희 on 10/06/2020.
 //  Copyright © 2020 남수김. All rights reserved.
 //
 
 import Foundation
 
-struct ListPro<T: Codable>: Codable {
-    let status: Int
-    let success: Bool
-    let data: T
-}
-
-struct DataClass: Codable {
-    let result: [CateList]
-}
-
-struct CateList: Codable {
-    let idx: Int
-    let name: String
-}
-/*
 struct FoodPro<T: Codable>: Codable {
     let status: Int
     let success: Bool
@@ -52,4 +37,3 @@ struct FoodLists: Codable {
         case deliveryFee = "delivery_fee"
     }
 }
-*/

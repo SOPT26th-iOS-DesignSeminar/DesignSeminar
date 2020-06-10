@@ -12,7 +12,7 @@ class CategoryDetailViewController: UIViewController {
 
     let ChitaOn : UIImage = UIImage(named:"btnSelectedChitadelilvery")!
     let ChitaOff : UIImage = UIImage(named:"btnUnselectedChitadelivery")!
-    var CateModel: Projects<DataClass>?
+    var CateModel: ListPro<DataClass>?
     var StoreModel: FoodPro<DataClass2>?
     
     @IBOutlet weak var StoreTableView: UITableView!
@@ -165,17 +165,11 @@ extension CategoryDetailViewController: UITableViewDataSource {
         guard let storeCell = tableView.dequeueReusableCell(withIdentifier: StoreListCell.identifier, for:
         indexPath) as? StoreListCell else { return UITableViewCell() }
         storeCell.StoreNameLabel.text = StoreModel?.data.result[indexPath.row].name
-        //storeCell.DeliveryTimeLabel.text = String(StoreModel?.data[0].result[indexPath.row].avgDeliveryTime)
+        storeCell.DeliveryTimeLabel.text = String(StoreModel?.data.result[indexPath.row].avgDeliveryTime ?? 0)
         storeCell.StoreExplainTextView.text = StoreModel?.data.result[indexPath.row].introduce
-        
-        /*
-        storeCell.storeInformation(storeImg: storeList[indexPath.row].storeImg.getImageName(), name: storeList[indexPath.row].name, time: storeList[indexPath.row].time, explain: storeList[indexPath.row].explain, point: storeList[indexPath.row].point, meter: storeList[indexPath.row].meter)*/
-        /*
-         @IBOutlet weak var StoreImageView: UIImageView!
-         @IBOutlet weak var DeliveryTimeLabel: UILabel!
-         @IBOutlet weak var StarPointLabel: UILabel!
-         @IBOutlet weak var MeterLabel: UILabel!
-         */
+        storeCell.StoreImageView.setImageCupang(StoreModel?.data.result[indexPath.row].picture)
+        storeCell.StarPointLabel.text = String(StoreModel?.data.result[indexPath.row].rating ?? 0)
+        storeCell.MeterLabel.text = String(StoreModel?.data.result[indexPath.row].distance ?? 0)
         return storeCell
     }
     
@@ -196,7 +190,7 @@ extension CategoryDetailViewController {
             switch data {
                 
             case .success(let res):
-                let response = res as! Projects<DataClass>
+                let response = res as! ListPro<DataClass>
                 self.CateModel = response
                 self.FoodSelectCollectionView.reloadData()
                 

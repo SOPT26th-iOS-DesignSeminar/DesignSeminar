@@ -31,9 +31,9 @@ extension UIImageView {
 
     }
     
-    func setImageBangMoon(_ urlString: String?){
+    func setImageCupang(_ urlString: String?){
         if urlString == "" || urlString == nil {
-            setImage(with: APIConstants.BaseURL + "/")
+            setImage(with: APIConstants.baseURL + "/")
         } else {
             setImage(with: (urlString ?? ""))
         }
