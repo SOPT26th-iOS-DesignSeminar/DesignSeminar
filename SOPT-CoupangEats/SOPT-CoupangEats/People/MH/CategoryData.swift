@@ -53,3 +53,18 @@ struct FoodLists: Codable {
     }
 }
 
+struct DataClass3: Codable {
+    let result: [subList]
+}
+
+// MARK: - Result
+struct subList: Codable {
+    let idx, mainCategoryIdx: Int
+    let name: String
+
+    enum CodingKeys: String, CodingKey {
+        case idx
+        case mainCategoryIdx = "main_category_idx"
+        case name
+    }
+}
