@@ -29,7 +29,7 @@ class FoodSelectCell: UICollectionViewCell {
     @IBOutlet weak var foodImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var clickImage: UIImageView!
-    
+    /*
     func set(_ foodInformation: FoodList) {
         foodImage.image = foodInformation.foodImg
         titleLabel.text = foodInformation.foodTitle
@@ -38,6 +38,11 @@ class FoodSelectCell: UICollectionViewCell {
         titleLabel.font = UIFont.systemFont(ofSize: CGFloat(12))
         titleLabel.textColor = UIColor.black
         
+    }*/
+    override func awakeFromNib() {
+        foodImage.layer.cornerRadius = foodImage.frame.width / 2
+        titleLabel.font = UIFont.systemFont(ofSize: CGFloat(12))
+        titleLabel.textColor = UIColor.black
     }
     
 }

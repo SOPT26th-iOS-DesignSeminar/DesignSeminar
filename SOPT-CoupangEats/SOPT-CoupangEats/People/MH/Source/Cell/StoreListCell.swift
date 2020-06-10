@@ -11,18 +11,6 @@ import UIKit
 class StoreListCell: UITableViewCell {
     static let identifier: String = "StoreListCell"
     
-    override var isSelected: Bool {
-        willSet {
-            print(newValue)
-        }
-    }
-    
-    override var isHighlighted: Bool {
-        willSet {
-            print(newValue)
-        }
-    }
-    
     @IBOutlet weak var StoreImageView: UIImageView!
     @IBOutlet weak var StoreNameLabel: UILabel!
     @IBOutlet weak var DeliveryTimeLabel: UILabel!
@@ -37,9 +25,9 @@ class StoreListCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
+    /*
     
     func storeInformation(storeImg: String, name: String, time: String, explain: String, point: String, meter: String){
         StoreImageView.image = UIImage(named: storeImg)
@@ -49,5 +37,5 @@ class StoreListCell: UITableViewCell {
         StarPointLabel.text = point
         MeterLabel.text = meter
     }
-
+*/
 }

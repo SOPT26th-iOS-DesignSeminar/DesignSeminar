@@ -12,7 +12,9 @@ class CategoryDetailViewController: UIViewController {
 
     let ChitaOn : UIImage = UIImage(named:"btnSelectedChitadelilvery")!
     let ChitaOff : UIImage = UIImage(named:"btnUnselectedChitadelivery")!
-    var model: Project?
+    var CateModel: Projects<DataClass>?
+    var StoreModel: FoodPro<DataClass2>?
+    
     @IBOutlet weak var StoreTableView: UITableView!
     @IBOutlet weak var FoodSelectCollectionView: UICollectionView!
     @IBOutlet weak var MenuSelectCollectionView: UICollectionView!
@@ -36,8 +38,8 @@ class CategoryDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        get()
-        
+        getCate()
+        getStore()
         FoodSelectCollectionView.delegate = self
         FoodSelectCollectionView.dataSource = self
         MenuSelectCollectionView.delegate = self
@@ -48,7 +50,7 @@ class CategoryDetailViewController: UIViewController {
         setNaviTitle()
         //setFoodList()
         setMenuList()
-        setStoreList()
+        //setStoreList()
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.tintColor = .black
@@ -79,6 +81,7 @@ class CategoryDetailViewController: UIViewController {
         let menu6 = MenuList(menutitle: "순대국")
         menuList = [menu1,menu2,menu3,menu4,menu5,menu6]
     }
+    /*
     private func setStoreList() {
         let store1 = StoreInformation(storeImg: .sundae, name: "백암왕순대 소머리국밥", time: "20분~30분", explain: "백암왕순대 소머리국밥은.용인백암왕순대의 전통을 이어가기 위해 ‘직접 삶아 우러내는’ 슬로건으로 초심을 첫 마음처럼 지켜가겠습니다.", point: "4.5 (307)", meter: "• 2.7 km")
         let store2 = StoreInformation(storeImg: .smile, name: "스마일한식", time: "20분~30분", explain: "신선한 재료로 남녀노소 가격부담없이 즐길 수 있도록 최고의 서비스를 제공하겠습니다!", point: "4.5 (307)", meter: "• 2.7 km")
@@ -86,7 +89,7 @@ class CategoryDetailViewController: UIViewController {
             , name: "백암왕순대 소머리국밥", time: "20분~30분", explain: "백암왕순대 소머리국밥은.용인백암왕순대의 전통을 이어가기 위해 ‘직접 삶아 우러내는’ 슬로건으로 초심을 첫 마음처럼 지켜가겠습니다.", point: "4.5 (307)", meter: "• 2.7 km")
         let store4 = StoreInformation(storeImg: .smile, name: "스마일한식", time: "20분~30분", explain: "신선한 재료로 남녀노소 가격부담없이 즐길 수 있도록 최고의 서비스를 제공하겠습니다!", point: "4.5 (307)", meter: "• 2.7 km")
         storeList = [store1,store2,store3,store4]
-    }
+    }*/
     private func setNaviTitle() {
         guard let title = self.title else {return}
         navigationController?.navigationBar.topItem?.title = title
@@ -128,8 +131,7 @@ extension CategoryDetailViewController: UICollectionViewDelegateFlowLayout {
 extension CategoryDetailViewController: UICollectionViewDataSource {
      func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == FoodSelectCollectionView {
-            model?.data.
-            return model?.data.count ?? 0
+            return CateModel?.data.result.count ?? 0
             
         } else {
             return menuList.count
@@ -141,7 +143,9 @@ extension CategoryDetailViewController: UICollectionViewDataSource {
         guard let foodCell = collectionView.dequeueReusableCell(withReuseIdentifier: FoodSelectCell.identifier, for: indexPath) as? FoodSelectCell
             else { return UICollectionViewCell() }
         //foodCell.set(foodList[indexPath.row])
-            foodCell.titleLabel.text = model?.data[indexPath]
+            //foodCell.titleLabel.text = model?.data[indexPath.row].result[indexPath.row].name
+            foodCell.titleLabel.text = CateModel?.data.result[indexPath.row].name
+            foodCell.foodImage.image = UIImage(named: "imgBunsik")
             return foodCell
         } else {
             guard let menuCell = collectionView.dequeueReusableCell(withReuseIdentifier: MenuSelectCell.identifier, for: indexPath) as? MenuSelectCell
@@ -154,13 +158,24 @@ extension CategoryDetailViewController: UICollectionViewDataSource {
 }
 extension CategoryDetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return storeList.count
+        return StoreModel?.data.result.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let storeCell = tableView.dequeueReusableCell(withIdentifier: StoreListCell.identifier, for:
         indexPath) as? StoreListCell else { return UITableViewCell() }
-        storeCell.storeInformation(storeImg: storeList[indexPath.row].storeImg.getImageName(), name: storeList[indexPath.row].name, time: storeList[indexPath.row].time, explain: storeList[indexPath.row].explain, point: storeList[indexPath.row].point, meter: storeList[indexPath.row].meter)
+        storeCell.StoreNameLabel.text = StoreModel?.data.result[indexPath.row].name
+        //storeCell.DeliveryTimeLabel.text = String(StoreModel?.data[0].result[indexPath.row].avgDeliveryTime)
+        storeCell.StoreExplainTextView.text = StoreModel?.data.result[indexPath.row].introduce
+        
+        /*
+        storeCell.storeInformation(storeImg: storeList[indexPath.row].storeImg.getImageName(), name: storeList[indexPath.row].name, time: storeList[indexPath.row].time, explain: storeList[indexPath.row].explain, point: storeList[indexPath.row].point, meter: storeList[indexPath.row].meter)*/
+        /*
+         @IBOutlet weak var StoreImageView: UIImageView!
+         @IBOutlet weak var DeliveryTimeLabel: UILabel!
+         @IBOutlet weak var StarPointLabel: UILabel!
+         @IBOutlet weak var MeterLabel: UILabel!
+         */
         return storeCell
     }
     
@@ -173,7 +188,7 @@ extension CategoryDetailViewController: UITableViewDelegate {
 }
 
 extension CategoryDetailViewController {
-    func get(){
+    func getCate(){
         CategoryService.shared.categoryloading() {
             [weak self]
             data in
@@ -181,11 +196,11 @@ extension CategoryDetailViewController {
             switch data {
                 
             case .success(let res):
-                let response = res as! Project
-                self.model = response
+                let response = res as! Projects<DataClass>
+                self.CateModel = response
                 self.FoodSelectCollectionView.reloadData()
                 
-            case .requestErr(let message):
+            case .requestErr:
                 print(".requestErr")
             case .pathErr:
                 print(".pathErr")
@@ -196,5 +211,30 @@ extension CategoryDetailViewController {
             }
             
         }
+    }
+    func getStore() {
+        CategoryService.shared.storeloading() {
+            [weak self]
+            data in
+            guard let `self` = self else {return}
+            switch data {
+                
+            case .success(let res):
+                let response = res as! FoodPro<DataClass2>
+                self.StoreModel = response
+                self.StoreTableView.reloadData()
+                
+            case .requestErr:
+                print(".requestErr")
+            case .pathErr:
+                print(".pathErr")
+            case .serverErr:
+                print(".serverErr")
+            case .networkFail:
+                print(".networkFail")
+            }
+            
+        }
+        
     }
 }
