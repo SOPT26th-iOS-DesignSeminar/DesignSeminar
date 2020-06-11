@@ -122,7 +122,7 @@ extension CategoryDetailViewController: UICollectionViewDataSource {
         //foodCell.set(foodList[indexPath.row])
             //foodCell.titleLabel.text = model?.data[indexPath.row].result[indexPath.row].name
             foodCell.titleLabel.text = CateModel?.data.result[indexPath.row].name
-            if CateModel?.data.result[indexPath.row].name == "분식" {
+            if CateModel?.data.result[indexPath.row].idx == 1 {
                 foodCell.foodImage.image = UIImage(named: "imgBunsik")
             } else if CateModel?.data.result[indexPath.row].name == "치킨" {
                 foodCell.foodImage.image = UIImage(named: "imgChicken")
@@ -161,6 +161,8 @@ extension CategoryDetailViewController: UITableViewDataSource {
         storeCell.MeterLabel.text = "• "+String(StoreModel?.data.result[indexPath.row].distance ?? 0)
         if StoreModel?.data.result[indexPath.row].cheetaDelivery == 1 {
             storeCell.ChitaImageView.image = UIImage(named : "imgChitadellivery")
+        } else {
+            storeCell.ChitaImageView.image = nil
         }
         return storeCell
     }
