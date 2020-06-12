@@ -26,7 +26,6 @@ struct CategoryService {
                             do {
                                 let decoder = JSONDecoder()
                                 let result = try decoder.decode(ListPro<DataClass>.self, from: value)
-                                
                                 completion(.success(result))
                             } catch {
                                 completion(.pathErr)
