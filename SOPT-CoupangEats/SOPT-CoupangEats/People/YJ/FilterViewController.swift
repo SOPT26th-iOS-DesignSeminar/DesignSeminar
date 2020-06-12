@@ -290,7 +290,14 @@ class FilterViewController: UIViewController {
                 
             
             case .requestErr:
-                print("request")
+                print("req                        |   1 +
+                    SOPT-CoupangEats/SOPT-CoupangEats/People/SE/NetworkResult.swift                       |  21 ++++++++
+                    SOPT-CoupangEats/SOPT-CoupangEats/People/SE/Structs/Ad.swift                          |   7 ++-
+                    SOPT-CoupangEats/SOPT-CoupangEats/People/SE/Structs/AdByServer.swift                  |  23 ++++++++
+                    .../SOPT-CoupangEats/People/SE/ViewControllers/ReHomeViewController.swift             | 117 +++++++++++++++++++++++++++++++++++++++--
+                    SOPT-CoupangEats/SOPT-CoupangEats/People/YJ/FilterData.swift                          |  73 +++++++++++++++++++++++++
+                    SOPT-CoupangEats/SOPT-CoupangEats/People/YJ/FilterService.swift                       |  85 ++++++++++++++++++++++++++++++
+                    SOPT-CoupangEats/SOPT-CoupangEats/People/YJ/FilterViewControluest")
             case .pathErr :
                 print("path")
             case .serverErr:
