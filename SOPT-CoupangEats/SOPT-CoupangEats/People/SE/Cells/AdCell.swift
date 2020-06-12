@@ -15,5 +15,6 @@ class AdCell: UICollectionViewCell {
     
     func set(_ adInformation: Ad) {
         adImg.image = adInformation.adImg
+        adImg.contentMode = .scaleToFill
     }
 }

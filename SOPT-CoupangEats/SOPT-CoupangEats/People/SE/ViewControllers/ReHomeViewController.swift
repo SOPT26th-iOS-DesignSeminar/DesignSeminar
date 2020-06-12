@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Kingfisher
+
 
 class ReHomeViewController: UIViewController {
 
@@ -23,7 +25,11 @@ class ReHomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        setAdList()
+        
+       
+        setBanners()
+        
+        
         adCollectionView.delegate = self
         adCollectionView.dataSource = self
         
@@ -35,14 +41,83 @@ class ReHomeViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        print("=====")
+        
+        
+        
+        
+        
     }
     
-    func setAdList() {
-        let ad1 = Ad(imgName: "imgHomeFirstadvertising")
-        let ad2 = Ad(imgName: "imgHomeFirstadvertising")
+    func setBanners(){
+        BannerService.shared.getBanner() { networkResult in
+            switch networkResult {
+            case .success(let token):
+                let urls = BannerService.urls
+                print(BannerService.urls)
+                
+                self.setAdList(urls: urls)
+                
+                
+            case .requestErr(let message):
+                print("request")
+            case .pathErr : print("path")
+            case .serverErr : print("server")
+            case .networkFail : print("networkFail")
+                
+                
+                
+            }
+            
+            
         
-        adList = [ad1, ad2]
+        }
+      
+        
     }
+    
+  
+    
+    func setAdList(urls : [String]?){
+//        var tmpImg : UIImageView = UIImageView(image: UIImage(named: "food_coffee"))\
+ 
+        for u in urls!{
+            print("callled")
+            print(u)
+//            tmpImg.setImage(from: u)
+//            let ad1 = Ad(img: tmpImg.image!)
+//            adList.append(ad1)
+            let url = URL(string: u)
+            do{
+                let data = try Data(contentsOf: url!)
+                var img = UIImage(data: data)
+                let tar = CGSize(width: adCollectionView.frame.width, height: adCollectionView.frame.height)
+                var new_img = UIImage.resize(image: img!, targetSize: tar)
+                adList.append(Ad(img: new_img))
+                
+//                adList.append(Ad(img : UIImage(data: data)!))
+            }catch{
+                print(error.localizedDescription)
+            }
+           
+            
+
+        }
+        
+        
+        
+        adCollectionView.reloadData()
+        
+       
+        
+        
+    }
+        
+        
+        
+
+    
+    
     
     func setCatList() {
         let cat1 = Category(imgName: "imgBunsik", catName: "분식")
@@ -146,4 +221,36 @@ extension ReHomeViewController: UITableViewDataSource {
 
 extension ReHomeViewController: UITableViewDelegate {
 
+}
+
+
+extension UIImage {
+    class func resize(image: UIImage, targetSize: CGSize) -> UIImage {
+        let size = image.size
+        
+        let widthRatio  = targetSize.width  / image.size.width
+        let heightRatio = targetSize.height / image.size.height
+        
+        var newSize: CGSize
+        if widthRatio > heightRatio {
+            newSize = CGSize(width: size.width * heightRatio, height: size.height * heightRatio)
+        } else {
+            newSize = CGSize(width: size.width * widthRatio,  height: size.height * widthRatio)
+        }
+        
+        let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
+        
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 0)
+        image.draw(in: rect)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage!
+    }
+    
+    class func scale(image: UIImage, by scale: CGFloat) -> UIImage? {
+        let size = image.size
+        let scaledSize = CGSize(width: size.width * scale, height: size.height * scale)
+        return UIImage.resize(image: image, targetSize: scaledSize)
+    }
 }

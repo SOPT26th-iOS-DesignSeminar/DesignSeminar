@@ -6,5 +6,6 @@ target 'SOPT-CoupangEats' do
   use_frameworks!
 
   # Pods for SOPT-CoupangEats
+  pod 'Kingfisher', '~>5.0'
   pod 'Alamofire', '~> 4.8.2'
 end

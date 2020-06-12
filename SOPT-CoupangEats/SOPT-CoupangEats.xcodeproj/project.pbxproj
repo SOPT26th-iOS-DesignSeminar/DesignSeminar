@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,6 +40,13 @@
 		3D237D432480208000E29043 /* FoodSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D237D422480208000E29043 /* FoodSelectCell.swift */; };
 		3D237D45248021EB00E29043 /* CategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D237D44248021EB00E29043 /* CategoryDetailViewController.swift */; };
 		3D5E2353247B62A20064125C /* MH.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5E2352247B62A20064125C /* MH.storyboard */; };
+		EC675355249361F600924DFD /* FilterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC675354249361F600924DFD /* FilterData.swift */; };
+		EC6753572493691500924DFD /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6753562493691500924DFD /* FilterService.swift */; };
+		EC761BC724923E3200C0597F /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC761BC624923E3200C0597F /* APIConstants.swift */; };
+		EC761BC92492425D00C0597F /* BannerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC761BC82492425D00C0597F /* BannerData.swift */; };
+		EC761BCB2492430200C0597F /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC761BCA2492430200C0597F /* NetworkResult.swift */; };
+		EC761BCD2492434C00C0597F /* BannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC761BCC2492434C00C0597F /* BannerService.swift */; };
+		EC77D1F424928B7D0065500F /* AdByServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC77D1F324928B7D0065500F /* AdByServer.swift */; };
 		ECB08DF1247D58D700903E18 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB08DF0247D58D700903E18 /* FilterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +88,13 @@
 		9BC4C2EC4512BD952B4478B9 /* Pods_SOPT_CoupangEats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOPT_CoupangEats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2CF35D362A25EE63FBC79C /* Pods-SOPT-CoupangEats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT-CoupangEats.release.xcconfig"; path = "Target Support Files/Pods-SOPT-CoupangEats/Pods-SOPT-CoupangEats.release.xcconfig"; sourceTree = "<group>"; };
 		D266FDF6387323EB1A562910 /* Pods-SOPT-CoupangEats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT-CoupangEats.debug.xcconfig"; path = "Target Support Files/Pods-SOPT-CoupangEats/Pods-SOPT-CoupangEats.debug.xcconfig"; sourceTree = "<group>"; };
+		EC675354249361F600924DFD /* FilterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterData.swift; sourceTree = "<group>"; };
+		EC6753562493691500924DFD /* FilterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
+		EC761BC624923E3200C0597F /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		EC761BC82492425D00C0597F /* BannerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerData.swift; sourceTree = "<group>"; };
+		EC761BCA2492430200C0597F /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		EC761BCC2492434C00C0597F /* BannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerService.swift; sourceTree = "<group>"; };
+		EC77D1F324928B7D0065500F /* AdByServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdByServer.swift; sourceTree = "<group>"; };
 		ECB08DF0247D58D700903E18 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,6 +214,8 @@
 			children = (
 				0660D67024796BCC0081A8C0 /* YJ.storyboard */,
 				ECB08DF0247D58D700903E18 /* FilterViewController.swift */,
+				EC675354249361F600924DFD /* FilterData.swift */,
+				EC6753562493691500924DFD /* FilterService.swift */,
 			);
 			path = YJ;
 			sourceTree = "<group>";
@@ -226,6 +242,10 @@
 				29F23E40247C5CB70039FB6A /* Structs */,
 				29F23E3B247C35450039FB6A /* Cells */,
 				0660D67724796C4F0081A8C0 /* SE.storyboard */,
+				EC761BC624923E3200C0597F /* APIConstants.swift */,
+				EC761BC82492425D00C0597F /* BannerData.swift */,
+				EC761BCA2492430200C0597F /* NetworkResult.swift */,
+				EC761BCC2492434C00C0597F /* BannerService.swift */,
 			);
 			path = SE;
 			sourceTree = "<group>";
@@ -255,6 +275,7 @@
 				29F23E3E247C358D0039FB6A /* Category.swift */,
 				29F23E42247C5CF20039FB6A /* Restaurants.swift */,
 				29FF1C7B2480EFFC00C56484 /* Ad.swift */,
+				EC77D1F324928B7D0065500F /* AdByServer.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -281,7 +302,6 @@
 				D266FDF6387323EB1A562910 /* Pods-SOPT-CoupangEats.debug.xcconfig */,
 				CB2CF35D362A25EE63FBC79C /* Pods-SOPT-CoupangEats.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -408,6 +428,8 @@
 				ECB08DF1247D58D700903E18 /* FilterViewController.swift in Sources */,
 				3D237D1B247FBEF100E29043 /* StoreInformation.swift in Sources */,
 				3D237D432480208000E29043 /* FoodSelectCell.swift in Sources */,
+				EC6753572493691500924DFD /* FilterService.swift in Sources */,
+				EC761BC92492425D00C0597F /* BannerData.swift in Sources */,
 				3D237CED247CDF2A00E29043 /* FoodList.swift in Sources */,
 				3D237D45248021EB00E29043 /* CategoryDetailViewController.swift in Sources */,
 				062D4BF2247EA1F70069DE6C /* MainViewController.swift in Sources */,
@@ -415,6 +437,7 @@
 				0684FC4D247ED35D00532B77 /* UIView+Extension.swift in Sources */,
 				0660D64F2479685E0081A8C0 /* ViewController.swift in Sources */,
 				18B2A5A924813B1300026DD0 /* FoodViewController.swift in Sources */,
+				EC675355249361F600924DFD /* FilterData.swift in Sources */,
 				3D237D17247EDDEF00E29043 /* MenuSelectCell.swift in Sources */,
 				0660D64B2479685E0081A8C0 /* AppDelegate.swift in Sources */,
 				3D237D15247EC60100E29043 /* MenuList.swift in Sources */,
@@ -424,12 +447,16 @@
 				29F23E3F247C358D0039FB6A /* Category.swift in Sources */,
 				29FF1C7E2480F56500C56484 /* ReHomeViewController.swift in Sources */,
 				0660D64B2479685E0081A8C0 /* AppDelegate.swift in Sources */,
+				EC761BCB2492430200C0597F /* NetworkResult.swift in Sources */,
+				EC761BCD2492434C00C0597F /* BannerService.swift in Sources */,
 				29FF1C8024812B0300C56484 /* buttonCell.swift in Sources */,
 				29F23E43247C5CF20039FB6A /* Restaurants.swift in Sources */,
 				29F23E3D247C35590039FB6A /* CategoryCell.swift in Sources */,
 				29F23E45247C601B0039FB6A /* RestaurantCell.swift in Sources */,
+				EC761BC724923E3200C0597F /* APIConstants.swift in Sources */,
 				062D4BF7247EAA3D0069DE6C /* BannerCollectionViewCell.swift in Sources */,
 				062D4BFB247EAA620069DE6C /* StoreHeaderTableViewCell.swift in Sources */,
+				EC77D1F424928B7D0065500F /* AdByServer.swift in Sources */,
 				062D4BF5247EAA2B0069DE6C /* StoreTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

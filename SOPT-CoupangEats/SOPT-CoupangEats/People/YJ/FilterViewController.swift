@@ -277,6 +277,39 @@ class FilterViewController: UIViewController {
         
     }
     
+    @IBAction func applying(_ sender: Any) {
+        FilterService.shared.filtering(time_min: startTime, time_max: endTime, money_min: startPrice, money_max: endPrice, sort_type: "rating"){networkResult in
+            
+            switch networkResult {
+                
+            case .success(let token) :
+                print(FilterService.filteredDatas[0].avg_delivery_time)
+                
+                
+                
+                
+            
+            case .requestErr:
+                print("request")
+            case .pathErr :
+                print("path")
+            case .serverErr:
+                print("serverError")
+            case .networkFail:
+                print("networkFail")
+            
+    
+            
+            
+        }
+        
+        
+        
+    }
+    
+    
+    
+}
     
 }
     

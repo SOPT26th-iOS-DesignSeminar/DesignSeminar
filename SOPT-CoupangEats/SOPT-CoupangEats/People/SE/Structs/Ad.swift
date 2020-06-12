@@ -10,9 +10,12 @@ import UIKit
 
 struct Ad {
     var adImg: UIImage?
+
     
-    init(imgName: String) {
-        self.adImg = UIImage(named: imgName)
+    init(img: UIImage) {
+        self.adImg = img
     }
+    
+
     
 }
