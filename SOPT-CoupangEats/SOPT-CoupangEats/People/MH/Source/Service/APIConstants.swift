@@ -12,5 +12,6 @@ struct APIConstants {
     static let baseURL = "http://13.209.128.238:3000"
     static let categoryURL = APIConstants.baseURL + "/category/main"
     static let storeURL = APIConstants.baseURL + "/store"
+    static let addURL = APIConstants.baseURL+"/ads"
+    static let filterURL = APIConstants.baseURL+"/filter"
 }
-
